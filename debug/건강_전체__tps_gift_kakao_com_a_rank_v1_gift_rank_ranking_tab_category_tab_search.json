@@ -1,0 +1,1284 @@
+{
+  "updatedAt": "07.22 11:00",
+  "last": true,
+  "feedbackData": {
+    "6754361": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "10127334": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "7289302": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "11282801": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "10044107": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "3328905": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "2019193": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "3494814": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "12582178": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "12125985": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "7612832": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "361685": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "11754551": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13180947": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "902157": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "9671402": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "7856321": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13879194": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "9583103": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "12922082": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    }
+  },
+  "products": [
+    {
+      "id": 2019193,
+      "productId": 2019193,
+      "name": "푸어러 증정 세트 [선물세트] 프리미엄로사 유기농 크랜베리 원액 100% NFC 착즙 주스 500ml 1병",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 19900,
+        "sellingPrice": 19900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 6776,
+        "name": "데일리원"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 3875,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260609100049_a24afccf5651493aa335d231dcf4988f.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "푸어러 증정 세트 [선물세트] 프리미엄로사 유기농 크랜베리 원액 100% NFC 착즙 주스 500ml 1병"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 374,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 902157,
+      "productId": 902157,
+      "name": "여성 임신 축하선물 종근당 철분 엽산 비타민D 플러스 3박스(6개월분)+쇼핑백 /여성 선물 임신 선물 임산부선물",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 29900,
+        "sellingPrice": 29900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 8844,
+        "name": "종근당"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 473,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260623112627_80867d60270443ae8e33690aa21a7d0f.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "여성 임신 축하선물 종근당 철분 엽산 비타민D 플러스 3박스(6개월분)+쇼핑백 /여성 선물 임신 선물 임산부선물"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 361685,
+      "productId": 361685,
+      "name": "뼈건강 칼마디 선물 칼슘마그네슘 360정 6개월분",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 24900,
+        "sellingPrice": 24900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 859,
+        "name": "종근당건강"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 630,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20250801092831_a7f0eab4129140dd9587b6f16e1554ca.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "뼈건강 칼마디 선물 칼슘마그네슘 360정 6개월분"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 6754361,
+      "productId": 6754361,
+      "name": "여에스더 글루타치온 필름 1박스 (30매입)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 24900,
+        "sellingPrice": 24900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 11590,
+        "name": "에스더포뮬러"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 1840,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20250203192813_9ed2c53866904a35a4a9d4e81aea33b8.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "여에스더 글루타치온 필름 1박스 (30매입)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 3328905,
+      "productId": 3328905,
+      "name": "고함량 비타민D 고려은단 메가도스D 2000IU 90정(3개월) / 비타민D 츄어블",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 11000,
+        "sellingPrice": 11000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 904,
+        "name": "고려은단"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 579,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20230727095752_a8385d4e984e47998cc395fb7944c92b.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "고함량 비타민D 고려은단 메가도스D 2000IU 90정(3개월) / 비타민D 츄어블"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13879194,
+      "productId": 13879194,
+      "name": "마시는 멜라토닌, 오로라 액상 리포좀 식물성 멜라토닌 3mg 5박스",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 313500,
+        "sellingPrice": 313500,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 18452,
+        "name": "오로라(건강)"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 3,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260709122513_8f1ed8684f2b4ca6b6f26bed18370af5.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "마시는 멜라토닌, 오로라 액상 리포좀 식물성 멜라토닌 3mg 5박스"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 11282801,
+      "productId": 11282801,
+      "name": "임신축하 선물 락티브 리포퍼 액상 철분 1박스(30포) / 임신축하 출산선물 임산부 출산영양제+손편지증정",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 29900,
+        "sellingPrice": 29900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 13905,
+        "name": "락티브"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 237,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260518135339_6ed278fefbbc4f97a680e378cee4d03d.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "임신축하 선물 락티브 리포퍼 액상 철분 1박스(30포) / 임신축하 출산선물 임산부 출산영양제+손편지증정"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13180947,
+      "productId": 13180947,
+      "name": "한국인 필수 테론 BEST 울트라도스 멀티비타민 6종 택2(총 2박스) (비타민/rTG오메가3/루테인/마그네슘/코큐텐/바나바잎추출물)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 22900,
+        "sellingPrice": 18900,
+        "discountRate": 17
+      },
+      "brand": {
+        "id": 19632,
+        "name": "테론"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 364,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260703105336_f340a5d9f63e43dc84fa36a2ac3d4e1d.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "한국인 필수 테론 BEST 울트라도스 멀티비타민 6종 택2(총 2박스) (비타민/rTG오메가3/루테인/마그네슘/코큐텐/바나바잎추출물)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 9671402,
+      "productId": 9671402,
+      "name": "플라보노이드40mg 엔젯오리진 프리미엄 미니 프로폴리스 아연 650 (90캡슐)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 28900,
+        "sellingPrice": 28900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 17168,
+        "name": "엔젯오리진"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 6,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20240418175012_3b6f0c4fb75e4f6596ad3bde69186ad6.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "플라보노이드40mg 엔젯오리진 프리미엄 미니 프로폴리스 아연 650 (90캡슐)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 7612832,
+      "productId": 7612832,
+      "name": "임산부 1등선물 [파우치+쇼핑백증정]\"상큼달달 자두맛\" 베스처 맛있는 철분스틱 선물세트 여성철분+비타민C+엽산",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 33900,
+        "sellingPrice": 33900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 5554,
+        "name": "헬스밸런스"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 427,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260311111424_d4bc742f30914bba92bdaa65887e4a15.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "임산부 1등선물 [파우치+쇼핑백증정]\"상큼달달 자두맛\" 베스처 맛있는 철분스틱 선물세트 여성철분+비타민C+엽산"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 3494814,
+      "productId": 3494814,
+      "name": "산골농장 국내산 짜먹는 배도라지청 도라지배즙 농축액 30포세트",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 26900,
+        "sellingPrice": 26900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 13329,
+        "name": "산골농장"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 2929,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20241213093235_62570ddc7bf54adb9ec2248671f65388.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "산골농장 국내산 짜먹는 배도라지청 도라지배즙 농축액 30포세트"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 374,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 10127334,
+      "productId": 10127334,
+      "name": "실속형 명품 비타민 뉴트리포유 듀얼+ 이뮨 종합 멀티비타민&미네랄 2박스(4입) - 선물하기 단독 에디션",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 12900,
+        "sellingPrice": 12900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19410,
+        "name": "뉴트리포유"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 111,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260508163229_9246a6d995834a85a85730977a459e29.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "실속형 명품 비타민 뉴트리포유 듀얼+ 이뮨 종합 멀티비타민&미네랄 2박스(4입) - 선물하기 단독 에디션"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 11754551,
+      "productId": 11754551,
+      "name": "모짜렐라 듬뿍~ 저당 곤약현미떡마리 100g 3종 9팩 / 곤약찰바",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 19900,
+        "sellingPrice": 19900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 13915,
+        "name": "다신샵"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 485,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20250604161844_50ee5d4e940745d3b5bb8f89011d5ffa.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "모짜렐라 듬뿍~ 저당 곤약현미떡마리 100g 3종 9팩 / 곤약찰바"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 12582178,
+      "productId": 12582178,
+      "name": "청정지역에서 온 하루한포 쏙 바이핏 양배추즙 호박즙 석류즙 60포 (택1)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 17900,
+        "sellingPrice": 17900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 5782,
+        "name": "건강즙"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 5419,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20251117161311_acc7fd3b166e4f83b94090b1202557d5.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "청정지역에서 온 하루한포 쏙 바이핏 양배추즙 호박즙 석류즙 60포 (택1)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 374,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 10044107,
+      "productId": 10044107,
+      "name": "산도 0.1 [파지티브호텔] 지중해 올리브오일 캡슐 쿠파주 (1box / 2캡슐, 30포)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 32000,
+        "sellingPrice": 32000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 15078,
+        "name": "파지티브호텔"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 1280,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260107184145_2a004e882e404ee189fc4892b9807787.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "산도 0.1 [파지티브호텔] 지중해 올리브오일 캡슐 쿠파주 (1box / 2캡슐, 30포)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 7289302,
+      "productId": 7289302,
+      "name": "캐나다명품젤리비타민 허벌랜드 귤젤리 4종(비타민B컴플렉스/에너지멀티비타민/세포보호비타민C/비타민D3 1000 IU)비타민구미젤리 택1",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 19900,
+        "sellingPrice": 19900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 11557,
+        "name": "허벌랜드"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 19016,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260720091527_98039520d76e4bb9a732434ec8aba798.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "캐나다명품젤리비타민 허벌랜드 귤젤리 4종(비타민B컴플렉스/에너지멀티비타민/세포보호비타민C/비타민D3 1000 IU)비타민구미젤리 택1"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 12922082,
+      "productId": 12922082,
+      "name": "화잘먹 콜라겐  [New 콜라겐] 비비랩 화이트 콜라겐 (1통/30포) / (생일,기념일,선물,화잘먹 콜라겐)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 29900,
+        "sellingPrice": 29900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 9711,
+        "name": "뉴트리원"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 4839,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260306132747_0db19555b57d42fd85b86f945aa52311.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "화잘먹 콜라겐  [New 콜라겐] 비비랩 화이트 콜라겐 (1통/30포) / (생일,기념일,선물,화잘먹 콜라겐)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 7856321,
+      "productId": 7856321,
+      "name": "힘나는 1포 [본사운영] 흡수율 높은 액상 글루콘산마그네슘 2,720 mg + 아르기닌(부원료) / 마그네슘 스피드액(14일분)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 13000,
+        "sellingPrice": 13000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 4267,
+        "name": "일양약품"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 56,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20241114193212_30b5573ec4b44da49e3f09d5f9185784.JPG",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "힘나는 1포 [본사운영] 흡수율 높은 액상 글루콘산마그네슘 2,720 mg + 아르기닌(부원료) / 마그네슘 스피드액(14일분)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 9583103,
+      "productId": 9583103,
+      "name": "오메가3 선물추천 종근당 20100 알티지 오메가3 맥스 2000 플러스 1박스 / 일일 최대섭취 비타민D 혈행개선",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 32900,
+        "sellingPrice": 32900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 8844,
+        "name": "종근당"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 48,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260529112846_0f3a535e876e4211934faa12e6425e71.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "오메가3 선물추천 종근당 20100 알티지 오메가3 맥스 2000 플러스 1박스 / 일일 최대섭취 비타민D 혈행개선"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 12125985,
+      "productId": 12125985,
+      "name": "독일산 고함량 철분 [휴럼] 철분캡슐 1박스 독일산 프리미엄 고햠량 철분",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 18900,
+        "sellingPrice": 18900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 6930,
+        "name": "휴럼"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 158,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20251217183000_dd41621ca5b746f3a5785f8e42844054.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "독일산 고함량 철분 [휴럼] 철분캡슐 1박스 독일산 프리미엄 고햠량 철분"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 204,
+          "representative": true
+        }
+      ]
+    }
+  ]
+}

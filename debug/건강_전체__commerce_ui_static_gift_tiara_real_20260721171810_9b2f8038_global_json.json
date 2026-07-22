@@ -1,0 +1,1239 @@
+{
+  "global.cart.add_btn": {
+    "description": "장바구니 > 즉시 추가 버튼",
+    "selector": "",
+    "variables": [
+      "entryAreaCode",
+      "isCustomOrder"
+    ],
+    "click": {
+      "action": {
+        "name": "장바구니 > 즉시 추가 버튼 클릭"
+      },
+      "click": {
+        "layer1": "cart",
+        "layer2": "add_btn",
+        "copy": "장바구니 > 즉시 추가 버튼"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "is_custom_order": "${isCustomOrder}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.cart.confirm_toast.view_cart_btn": {
+    "description": "장바구니 > 담기 성공 토스트 > 보러가기 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "장바구니 > 담기 성공 토스트 > 보러가기 버튼 클릭"
+      },
+      "click": {
+        "layer1": "cart",
+        "layer2": "confirm_toast",
+        "layer3": "view_cart_btn",
+        "copy": "장바구니 > 담기 성공 토스트 > 보러가기 버튼",
+        "imp_id": "global.cart.confirm_toast.view_cart_btn",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "global.cart.confirm_toast.view_cart_btn",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.cart.confirm_toast.view_cart_btn",
+      "imp_ordnum": "",
+      "layer1": "cart",
+      "layer2": "confirm_toast",
+      "layer3": "view_cart_btn"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.cart_confirm_toast.view_btn": {
+    "description": "장바구니 담기 확인 토스트 > 보러가기 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "장바구니 담기 확인 토스트 > 보러가기 버튼 클릭"
+      },
+      "click": {
+        "layer1": "cart_confirm_toast",
+        "layer2": "view_btn",
+        "copy": "장바구니 담기 확인 토스트 > 보러가기 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.coupon.download_all_btn": {
+    "description": "쿠폰 전체 다운로드 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "클릭"
+      },
+      "click": {
+        "layer1": "coupon",
+        "layer2": "download_all_btn",
+        "imp_id": "global.coupon.download_all_btn",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "global.coupon.download_all_btn",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.coupon.download_all_btn",
+      "imp_ordnum": "",
+      "layer1": "coupon",
+      "layer2": "download_all_btn"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.coupon.download_single_btn": {
+    "description": "쿠폰 개별 다운로드 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "클릭"
+      },
+      "click": {
+        "layer1": "coupon",
+        "layer2": "download_single_btn",
+        "imp_id": "global.coupon.download_single_btn",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "global.coupon.download_single_btn",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.coupon.download_single_btn",
+      "imp_ordnum": "",
+      "layer1": "coupon",
+      "layer2": "download_single_btn"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.coupon_direct_download_all_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "apiResult",
+      "coupons",
+      "entryAreaCode"
+    ],
+    "click": {
+      "action": {
+        "name": "쿠폰 즉시 전체 다운로드 버튼_성공 클릭",
+        "kind": "DownloadCoupon"
+      },
+      "click": {
+        "layer1": "coupon_direct_download_all_btn",
+        "copy": "쿠폰 즉시 전체 다운로드 버튼_성공"
+      }
+    },
+    "customObjs": {
+      "service_obj": {
+        "coupons": "${coupons}"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "api_result": "${apiResult}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.coupon_direct_download_single_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "apiResult",
+      "coupons",
+      "entryAreaCode"
+    ],
+    "click": {
+      "action": {
+        "name": "쿠폰 즉시 개별 다운로드 버튼_성공 클릭",
+        "kind": "DownloadCoupon"
+      },
+      "click": {
+        "layer1": "coupon_direct_download_single_btn",
+        "copy": "쿠폰 즉시 개별 다운로드 버튼_성공"
+      }
+    },
+    "customObjs": {
+      "service_obj": {
+        "coupons": "${coupons}"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "api_result": "${apiResult}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.exit_ad_banner": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "bannerId",
+      "bannerName",
+      "contentsId",
+      "kcAdCid"
+    ],
+    "click": {
+      "action": {
+        "name": "선물하기 종료 > 광고 배너 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${bannerId}",
+        "type": "banner",
+        "name": "${bannerName}"
+      },
+      "click": {
+        "layer1": "exit_ad_banner",
+        "copy": "선물하기 종료 > 광고 배너",
+        "imp_id": "global.exit_ad_banner-${bannerId}",
+        "imp_provider": "COMMERCE_AD_CENTER"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "global.exit_ad_banner"
+      }
+    },
+    "vimp": {
+      "imp_id": "global.exit_ad_banner-${bannerId}",
+      "imp_provider": "COMMERCE_AD_CENTER",
+      "imp_type": "vimp",
+      "imp_area": "global.exit_ad_banner",
+      "imp_ordnum": "",
+      "layer1": "exit_ad_banner",
+      "type": "banner",
+      "id": "${bannerId}",
+      "name": "${bannerName}"
+    },
+    "customProps": {
+      "contents_id": "${contentsId}",
+      "kc_ad_cid": "${kcAdCid}",
+      "id_service": "gift"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.exit_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "선물하기 종료 버튼 클릭"
+      },
+      "click": {
+        "layer1": "exit_btn",
+        "copy": "선물하기 종료 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.exit_confirm_layer": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "vimp": {
+      "imp_id": "global.exit_confirm_layer",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.exit_confirm_layer",
+      "imp_ordnum": "",
+      "layer1": "exit_confirm_layer"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.exit_confirm_layer.exit_cancel_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "선물하기 종료 > 취소 버튼 클릭"
+      },
+      "click": {
+        "layer1": "exit_confirm_layer",
+        "layer2": "exit_cancel_btn",
+        "copy": "선물하기 종료 > 취소 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.exit_confirm_layer.exit_confirm_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "선물하기 종료 > 확인 버튼 클릭"
+      },
+      "click": {
+        "layer1": "exit_confirm_layer",
+        "layer2": "exit_confirm_btn",
+        "copy": "선물하기 종료 > 확인 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.layer_unreceivable_friends": {
+    "description": "수신불가친구안내레이어",
+    "selector": "",
+    "variables": [],
+    "vimp": {
+      "imp_id": "global.layer_unreceivable_friends",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.layer_unreceivable_friends",
+      "imp_ordnum": "",
+      "layer1": "layer_unreceivable_friends"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.layer_unreceivable_friends.btn_confirm": {
+    "description": "수신불가친구안내레이어 > 확인",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "수신불가친구안내레이어 > 확인 클릭"
+      },
+      "click": {
+        "layer1": "layer_unreceivable_friends",
+        "layer2": "btn_confirm",
+        "copy": "수신불가친구안내레이어 > 확인",
+        "imp_id": "global.layer_unreceivable_friends.btn_confirm",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "global.layer_unreceivable_friends.btn_confirm",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.layer_unreceivable_friends.btn_confirm",
+      "imp_ordnum": "",
+      "layer1": "layer_unreceivable_friends",
+      "layer2": "btn_confirm"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.product.cart_btn": {
+    "description": "상품 하단 CTA 영역 > 장바구니 버튼",
+    "selector": "",
+    "variables": [
+      "adTrackId",
+      "apiResult",
+      "brandId",
+      "brandName",
+      "ecommerceContents",
+      "entryAreaCode",
+      "productId",
+      "productName",
+      "productType",
+      "sellerId",
+      "sellerName"
+    ],
+    "click": {
+      "action": {
+        "name": "상품 목록 > 장바구니 버튼 클릭",
+        "kind": "AddToCart"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "ecommerceContents": "${ecommerceContents}",
+      "click": {
+        "layer1": "product",
+        "layer2": "cart_btn",
+        "copy": "상품 목록 > 장바구니 버튼"
+      },
+      "adTrackId": "${adTrackId}"
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "product_id": "${productId}",
+      "product_name": "${productName}",
+      "product_type": "${productType}",
+      "product_ids": "${productId}",
+      "brand_id": "${brandId}",
+      "brand_name": "${brandName}",
+      "adtrack_service_origin": "gift",
+      "seller_id": "${sellerId}",
+      "seller_name": "${sellerName}",
+      "api_result": "${apiResult}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": true,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.product.wish_direct_add_btn": {
+    "description": "상품 하단 CTA 영역 > 위시 담기",
+    "selector": "",
+    "variables": [
+      "adTrackId",
+      "brandId",
+      "brandName",
+      "entryAreaCode",
+      "productId",
+      "productName",
+      "productType",
+      "sellerId",
+      "sellerName",
+      "wishExposureRadio"
+    ],
+    "click": {
+      "action": {
+        "name": "상품 목록 > 위시 담기 확정 버튼 토글",
+        "kind": "AddToWishList"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product",
+        "layer2": "wish_direct_add_btn",
+        "copy": "상품 목록 > 위시 담기 확정 버튼"
+      },
+      "adTrackId": "${adTrackId}"
+    },
+    "customProps": {
+      "wish_exposure_radio": "${wishExposureRadio}",
+      "seller_id": "${sellerId}",
+      "seller_name": "${sellerName}",
+      "brand_id": "${brandId}",
+      "brand_name": "${brandName}",
+      "product_ids": "${productId}",
+      "entry_area_code": "${entryAreaCode}",
+      "product_type": "${productType}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": true,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.product.wish_layer_open_btn": {
+    "description": "상품 하단 CTA 영역 > 위시 담기",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "상품 목록 > 위시 레이어 열기 버튼 토글"
+      },
+      "click": {
+        "layer1": "product",
+        "layer2": "wish_layer_open_btn",
+        "copy": "상품 목록 > 위시 레이어 열기 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.product.wish_remove_btn": {
+    "description": "상품 하단 CTA 영역 > 위시 제거",
+    "selector": "",
+    "variables": [
+      "apiResult",
+      "entryAreaCode",
+      "productId",
+      "productName",
+      "productType"
+    ],
+    "click": {
+      "action": {
+        "name": "상품 목록 > 위시 제거 버튼 클릭",
+        "kind": "RemoveFromWishList"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product",
+        "layer2": "wish_remove_btn",
+        "copy": "상품 목록 > 위시 제거 버튼"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "api_result": "${apiResult}",
+      "product_type": "${productType}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.product_list.brand": {
+    "description": "상품 목록 > 브랜드명",
+    "selector": "",
+    "variables": [
+      "adType",
+      "brandId",
+      "brandName",
+      "entryAreaCode"
+    ],
+    "click": {
+      "action": {
+        "name": "상품 목록 > 브랜드명 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${brandId}",
+        "type": "brand",
+        "name": "${brandName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "brand",
+        "copy": "상품 목록 > 브랜드명"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "global.product_list.brand"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "ad_type": "${adType}",
+      "id_service": "gift"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.product_option_layer.cart_btn": {
+    "description": "상품 하단 CTA 영역 > 장바구니 버튼",
+    "selector": "",
+    "variables": [
+      "adTrackId",
+      "apiResult",
+      "brandId",
+      "brandName",
+      "ecommerceContents",
+      "entryAreaCode",
+      "productId",
+      "productName",
+      "productType",
+      "sellerId",
+      "sellerName"
+    ],
+    "click": {
+      "action": {
+        "name": "옵션 레이어 > 장바구니 담기 버튼 클릭",
+        "kind": "AddToCart"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "ecommerceContents": "${ecommerceContents}",
+      "click": {
+        "layer1": "product_option_layer",
+        "layer2": "cart_btn",
+        "copy": "옵션 레이어 > 장바구니 담기 버튼"
+      },
+      "adTrackId": "${adTrackId}"
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "product_id": "${productId}",
+      "product_name": "${productName}",
+      "product_type": "${productType}",
+      "product_ids": "${productId}",
+      "brand_id": "${brandId}",
+      "brand_name": "${brandName}",
+      "adtrack_service_origin": "gift",
+      "seller_id": "${sellerId}",
+      "seller_name": "${sellerName}",
+      "api_result": "${apiResult}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": true,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.talkchannel_add_and_download_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "apiResult",
+      "coupons",
+      "entryAreaCode"
+    ],
+    "click": {
+      "action": {
+        "name": "톡채널 친구 맺고 쿠폰 다운로드 버튼_성공 클릭",
+        "kind": "DownloadCoupon"
+      },
+      "click": {
+        "layer1": "talkchannel_add_and_download_btn",
+        "copy": "톡채널 친구 맺고 쿠폰 다운로드 버튼_성공"
+      }
+    },
+    "customObjs": {
+      "service_obj": {
+        "coupons": "${coupons}"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "api_result": "${apiResult}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.talkchannel_coupon_notice_close_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "톡채널 친구 전용 안내 팝업 닫기 버튼 클릭"
+      },
+      "click": {
+        "layer1": "talkchannel_coupon_notice_close_btn",
+        "copy": "톡채널 친구 전용 안내 팝업 닫기 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.talkchannel_coupon_notice_popup": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "vimp": {
+      "imp_id": "global.talkchannel_coupon_notice_popup",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.talkchannel_coupon_notice_popup",
+      "imp_ordnum": "",
+      "layer1": "talkchannel_coupon_notice_popup"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.vip_coupon_use_poking_bottom_sheet": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "couponIds",
+      "entryAreaCode"
+    ],
+    "vimp": {
+      "imp_id": "global.vip_coupon_use_poking_bottom_sheet",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.vip_coupon_use_poking_bottom_sheet",
+      "imp_ordnum": "",
+      "layer1": "vip_coupon_use_poking_bottom_sheet"
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "coupon_ids": "${couponIds}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.vip_coupon_use_poking_bottom_sheet.product": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "productId",
+      "productName",
+      "productType"
+    ],
+    "click": {
+      "action": {
+        "name": "VIP 쿠폰 사용 촉진 바텀시트 > 상품 클릭"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "vip_coupon_use_poking_bottom_sheet",
+        "layer2": "product",
+        "copy": "VIP 쿠폰 사용 촉진 바텀시트 > 상품",
+        "imp_id": "global.vip_coupon_use_poking_bottom_sheet.product-${productId}",
+        "imp_provider": ""
+      },
+      "purchaseEntry": {
+        "pageEntryId": "global.vip_coupon_use_poking_bottom_sheet.product"
+      }
+    },
+    "vimp": {
+      "imp_id": "global.vip_coupon_use_poking_bottom_sheet.product-${productId}",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.vip_coupon_use_poking_bottom_sheet.product",
+      "imp_ordnum": "",
+      "layer1": "vip_coupon_use_poking_bottom_sheet",
+      "layer2": "product",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "product_type": "${productType}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.vip_coupon_use_poking_bottom_sheet.use_coupon_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "VIP 쿠폰 사용 촉진 바텀시트 > 쿠폰 사용하러 가기 클릭"
+      },
+      "click": {
+        "layer1": "vip_coupon_use_poking_bottom_sheet",
+        "layer2": "use_coupon_btn",
+        "copy": "VIP 쿠폰 사용 촉진 바텀시트 > 쿠폰 사용하러 가기"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.vip_coupon_use_poking_bottom_sheet.view_more_product_btn": {
+    "description": "",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "VIP 쿠폰 사용 촉진 바텀시트 > 상품 더보기 클릭"
+      },
+      "click": {
+        "layer1": "vip_coupon_use_poking_bottom_sheet",
+        "layer2": "view_more_product_btn",
+        "copy": "VIP 쿠폰 사용 촉진 바텀시트 > 상품 더보기"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.vip_get_point_bottom_sheet.view_more_product_btn": {
+    "description": "VIP 포인트적립 성공 바텀시트 > 비밀상점 > 더보기",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "VIP 포인트적립 성공 바텀시트 > 비밀상점 > 더보기 클릭",
+        "kind": "ClickContent"
+      },
+      "click": {
+        "layer1": "vip_get_point_bottom_sheet",
+        "layer2": "view_more_product_btn",
+        "copy": "VIP 포인트적립 성공 바텀시트 > 비밀상점 > 더보기"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.vip_get_point_bottom_sheet.vip_product": {
+    "description": "VIP 포인트적립 성공 바텀시트 > 비밀상점",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "VIP 포인트적립 성공 바텀시트 > 비밀상점 클릭",
+        "kind": "ClickContent"
+      },
+      "click": {
+        "layer1": "vip_get_point_bottom_sheet",
+        "layer2": "vip_product",
+        "copy": "VIP 포인트적립 성공 바텀시트 > 비밀상점",
+        "imp_id": "global.vip_get_point_bottom_sheet.vip_product",
+        "imp_provider": ""
+      },
+      "purchaseEntry": {
+        "pageEntryId": "global.vip_get_point_bottom_sheet.vip_product"
+      }
+    },
+    "vimp": {
+      "imp_id": "global.vip_get_point_bottom_sheet.vip_product",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.vip_get_point_bottom_sheet.vip_product",
+      "imp_ordnum": "",
+      "layer1": "vip_get_point_bottom_sheet",
+      "layer2": "vip_product"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.add_to_wishlist_btn": {
+    "description": "장바구니 > 상품 위시 제거",
+    "selector": "",
+    "variables": [
+      "productId",
+      "productName",
+      "productType"
+    ],
+    "click": {
+      "action": {
+        "name": "장바구니 > 위시로 이동 클릭"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "wish",
+        "layer2": "add_to_wishlist_btn",
+        "copy": "장바구니 > 위시로 이동"
+      }
+    },
+    "customProps": {
+      "product_type": "${productType}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.confirm_toast.view_list_btn": {
+    "description": "위시 > 담기 확인 토스트 > 목록 보기 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "위시 > 담기 성공 토스트 > 보러가기 버튼 클릭"
+      },
+      "click": {
+        "layer1": "wish",
+        "layer2": "confirm_toast",
+        "layer3": "view_list_btn",
+        "copy": "위시 > 담기 성공 토스트 > 보러가기 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.layer": {
+    "description": "위시 > 위시 레이어",
+    "selector": "",
+    "variables": [
+      "wishExposureRadio"
+    ],
+    "vimp": {
+      "imp_id": "global.wish.layer",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "global.wish.layer",
+      "imp_ordnum": "",
+      "layer1": "wish",
+      "layer2": "layer"
+    },
+    "customProps": {
+      "wish_exposure_radio": "${wishExposureRadio}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.layer.add_btn": {
+    "description": "위시 > 위시 레이어 > 확인 버튼",
+    "selector": "",
+    "variables": [
+      "entryAreaCode",
+      "wishExposureRadio"
+    ],
+    "click": {
+      "action": {
+        "name": "위시 > 추가 버튼 클릭"
+      },
+      "click": {
+        "layer1": "wish",
+        "layer2": "layer",
+        "layer3": "add_btn",
+        "copy": "위시 > 추가 버튼"
+      }
+    },
+    "customProps": {
+      "wish_exposure_radio": "${wishExposureRadio}",
+      "entry_area_code": "${entryAreaCode}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.layer.exposure_radio_btn": {
+    "description": "위시 > 위시 레이어 > 공개 범위 라디오 버튼",
+    "selector": "",
+    "variables": [
+      "wishExposureRadio"
+    ],
+    "click": {
+      "action": {
+        "name": "위시 > 공개 범위 설정 라디오 버튼 클릭"
+      },
+      "click": {
+        "layer1": "wish",
+        "layer2": "layer",
+        "layer3": "exposure_radio_btn",
+        "copy": "위시 > 공개 범위 설정 라디오 버튼"
+      }
+    },
+    "customProps": {
+      "wish_exposure_radio": "${wishExposureRadio}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.toggle": {
+    "description": "위시 > 위시 토글",
+    "selector": "",
+    "variables": [
+      "directAdd",
+      "entryAreaCode",
+      "status"
+    ],
+    "click": {
+      "action": {
+        "name": "위시 > 위시 토글 토글"
+      },
+      "click": {
+        "layer1": "wish",
+        "layer2": "toggle",
+        "copy": "위시 > 위시 토글"
+      }
+    },
+    "customProps": {
+      "entry_area_code": "${entryAreaCode}",
+      "status": "${status}",
+      "directAdd": "${directAdd}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish.wish_visibility_toggle": {
+    "description": "장바구니 > 내위시 탭 > 위시 공개 범위 토글",
+    "selector": "",
+    "variables": [
+      "toggleStatus"
+    ],
+    "click": {
+      "action": {
+        "name": "장바구니 > 내위시 탭 > 위시 공개 범위 토글 클릭"
+      },
+      "click": {
+        "layer1": "wish",
+        "layer2": "wish_visibility_toggle",
+        "copy": "장바구니 > 내위시 탭 > 위시 공개 범위 토글"
+      }
+    },
+    "customProps": {
+      "toggle_status": "${toggleStatus}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish_confirm_toast.view_list_btn": {
+    "description": "위시 담기 확인 토스트 > 목록 보기 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "위시 컨펌 토스트 > 목록 보기 버튼 클릭"
+      },
+      "click": {
+        "layer1": "wish_confirm_toast",
+        "layer2": "view_list_btn",
+        "copy": "위시 컨펌 토스트 > 목록 보기 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish_layer.confirm_btn": {
+    "description": "위시 레이어 > 확인 버튼",
+    "selector": "",
+    "variables": [
+      "adTrackId",
+      "apiResult",
+      "brandId",
+      "brandName",
+      "entryAreaCode",
+      "productId",
+      "productName",
+      "productType",
+      "sellerId",
+      "sellerName",
+      "wishExposureRadio"
+    ],
+    "click": {
+      "action": {
+        "name": "위시 레이어 > 저장 확인 버튼 클릭",
+        "kind": "AddToWishList"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "wish_layer",
+        "layer2": "confirm_btn",
+        "copy": "위시 레이어 > 저장 확인 버튼"
+      },
+      "adTrackId": "${adTrackId}"
+    },
+    "customProps": {
+      "wish_exposure_radio": "${wishExposureRadio}",
+      "seller_id": "${sellerId}",
+      "seller_name": "${sellerName}",
+      "brand_id": "${brandId}",
+      "brand_name": "${brandName}",
+      "product_ids": "${productId}",
+      "entry_area_code": "${entryAreaCode}",
+      "api_result": "${apiResult}",
+      "product_type": "${productType}",
+      "id_service": "gift"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": true,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "global.wish_layer.radio_btn": {
+    "description": "위시 레이어 > 공개 범위 라디오 버튼",
+    "selector": "",
+    "variables": [
+      "wishExposureRadio"
+    ],
+    "click": {
+      "action": {
+        "name": "위시 레이어 > 공개 여부 라디오 버튼 클릭"
+      },
+      "click": {
+        "layer1": "wish_layer",
+        "layer2": "radio_btn",
+        "copy": "위시 레이어 > 공개 여부 라디오 버튼"
+      }
+    },
+    "customProps": {
+      "wish_exposure_radio": "${wishExposureRadio}"
+    },
+    "updatePurchaseData": true,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  }
+}

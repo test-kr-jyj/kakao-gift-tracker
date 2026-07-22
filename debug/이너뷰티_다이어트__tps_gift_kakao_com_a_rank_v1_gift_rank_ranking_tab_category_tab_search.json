@@ -1,0 +1,1319 @@
+{
+  "updatedAt": "07.22 11:00",
+  "last": true,
+  "feedbackData": {
+    "13739116": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13720649": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13716405": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13745813": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13745821": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13716456": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13708124": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13720630": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13739161": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13729837": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13720623": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13702846": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13730547": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13730129": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13725441": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13745830": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13724086": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13719719": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13730506": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    },
+    "13718816": {
+      "impression_id": "air_gift_ranking_category_tab",
+      "caller_id": "ranking_tab"
+    }
+  },
+  "products": [
+    {
+      "id": 13745830,
+      "productId": 13745830,
+      "name": "하루채움 샐러드 캔디 2g 30정 2박스+쇼핑백/식이섬유/야채/채소/과일",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 24900,
+        "sellingPrice": 24900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 7494,
+        "name": "네이처드림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 4,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260722105149_b404100998b849fe85fd71523258cc4c.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "하루채움 샐러드 캔디 2g 30정 2박스+쇼핑백/식이섬유/야채/채소/과일"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13745821,
+      "productId": 13745821,
+      "name": "하루채움 샐러드 캔디 2g 30정 1박스+쇼핑백/식이섬유/야채/채소/과일",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 12900,
+        "sellingPrice": 12900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 7494,
+        "name": "네이처드림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 7,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260722105200_28b4a82e3fd74cc1a0cd67b10bf8098b.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "하루채움 샐러드 캔디 2g 30정 1박스+쇼핑백/식이섬유/야채/채소/과일"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13745813,
+      "productId": 13745813,
+      "name": "식물성 멜라토닌 5mg함유 템포 플러스 500mg 30정 1박스+쇼핑백/타트체리/테아닌/트립토판",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 10900,
+        "sellingPrice": 10900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 7494,
+        "name": "네이처드림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 2,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260708115618_007858d5c1694379b3ef666061ec71de.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "식물성 멜라토닌 5mg함유 템포 플러스 500mg 30정 1박스+쇼핑백/타트체리/테아닌/트립토판"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13739161,
+      "productId": 13739161,
+      "name": "[선물박스] 리얼 유기농 푸룬즙100 20g 14포 2박스/NFC 푸룬주스/푸룬농축액",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 16900,
+        "sellingPrice": 16900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 7494,
+        "name": "네이처드림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 1,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260629141307_d2b01ec8df1546648e2a41f9e7505aba.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "[선물박스] 리얼 유기농 푸룬즙100 20g 14포 2박스/NFC 푸룬주스/푸룬농축액"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13739116,
+      "productId": 13739116,
+      "name": "리얼 유기농 푸룬즙100 20g 14포 1박스+쇼핑백/NFC 푸룬주스/푸룬농축액",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 9500,
+        "sellingPrice": 9500,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 7494,
+        "name": "네이처드림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 0,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260629141402_552641a0dd6b465694a60da9e2b5d1b1.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "리얼 유기농 푸룬즙100 20g 14포 1박스+쇼핑백/NFC 푸룬주스/푸룬농축액"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13730547,
+      "productId": 13730547,
+      "name": "\"텀블러 증정\" [단독] 글루어트 '진저진저 좋아해' 기획 SET (애사비 유자진저5+텀블러1+쇼핑백1)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 50000,
+        "sellingPrice": 50000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19579,
+        "name": "글루어트"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 4105,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260612153633_97ec19a73f5445bfaff73ae4708a1580.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "\"텀블러 증정\" [단독] 글루어트 '진저진저 좋아해' 기획 SET (애사비 유자진저5+텀블러1+쇼핑백1)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13730506,
+      "productId": 13730506,
+      "name": "\"텀블러 증정\" [단독] 글루어트 '기운 체리세요' 기획 SET (애사비 타트체리5+텀블러1+쇼핑백1)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 50000,
+        "sellingPrice": 50000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19579,
+        "name": "글루어트"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 4396,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260612152535_7fb4c4aba3a5429b8f02038841ce947f.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "\"텀블러 증정\" [단독] 글루어트 '기운 체리세요' 기획 SET (애사비 타트체리5+텀블러1+쇼핑백1)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13730129,
+      "productId": 13730129,
+      "name": "[박스포장] 꼬박꼬밥 서리태 무가당 맷돌두유 콩물두유 2세트(30포, 190ml)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 45000,
+        "sellingPrice": 45000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19657,
+        "name": "꼬박꼬밥"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 0,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260713113836_d69e33b014f2440780ff3b411e41af26.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "[박스포장] 꼬박꼬밥 서리태 무가당 맷돌두유 콩물두유 2세트(30포, 190ml)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13729837,
+      "productId": 13729837,
+      "name": "[박스포장] 꼬박꼬밥 서리태 무가당 맷돌두유 콩물두유 1세트(15포, 190ml)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 30900,
+        "sellingPrice": 30900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19657,
+        "name": "꼬박꼬밥"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 2,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260713113912_2d4db45881254103a6d21a57a9b871ab.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "[박스포장] 꼬박꼬밥 서리태 무가당 맷돌두유 콩물두유 1세트(15포, 190ml)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13725441,
+      "productId": 13725441,
+      "name": "이경제 더힘찬 선식100 2박스(60포) 저당 간편 아침식사대용",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 58500,
+        "sellingPrice": 58500,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 16229,
+        "name": "래오이경제"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 1,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260612092518_5cd04fc015bc45cea1b278b04222f70f.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "이경제 더힘찬 선식100 2박스(60포) 저당 간편 아침식사대용"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13724086,
+      "productId": 13724086,
+      "name": "하이뮨 액티브 프로틴 쉐이크 파우치(너티초코/딸기요거트/제주말차)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 43800,
+        "sellingPrice": 43800,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 1996,
+        "name": "일동후디스"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 0,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260710092121_50fe0a7bbc1e4581a995f02a79e53298.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "하이뮨 액티브 프로틴 쉐이크 파우치(너티초코/딸기요거트/제주말차)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13720649,
+      "productId": 13720649,
+      "name": "\"입터짐 수호천사\" 속세맛 9종 프롬잇 단백질 간식 세트 (프로틴칩7종+프로틴킥2종)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 27900,
+        "sellingPrice": 27900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19762,
+        "name": "프롬잇"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 22,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260610180923_553b510e63ba412fb3bbdd550327fdf9.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "\"입터짐 수호천사\" 속세맛 9종 프롬잇 단백질 간식 세트 (프로틴칩7종+프로틴킥2종)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "labels": [
+        {
+          "type": "EXCLUSIVE",
+          "name": "단독"
+        }
+      ],
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "specialGift": {
+        "item": "포토리뷰 100% 커피쿠폰"
+      },
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13720630,
+      "productId": 13720630,
+      "name": "\"식단선물 끝판왕\" 속세맛 12종 프롬잇 단백질 충전 세트 (쉐이크2종+단백질과자9종+저당초코볼)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 46900,
+        "sellingPrice": 46900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19762,
+        "name": "프롬잇"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 19,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260710181840_e7197ebd32594319b2a6d803a16c1350.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "\"식단선물 끝판왕\" 속세맛 12종 프롬잇 단백질 충전 세트 (쉐이크2종+단백질과자9종+저당초코볼)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "labels": [
+        {
+          "type": "EXCLUSIVE",
+          "name": "단독"
+        }
+      ],
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "specialGift": {
+        "item": "포토리뷰 100% 커피쿠폰"
+      },
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13720623,
+      "productId": 13720623,
+      "name": "\"운동하고 먹어\" 속세맛 9종 프롬잇 단백질 충전 세트 (쉐이크2종+단백질과자7종)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 39900,
+        "sellingPrice": 39900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19762,
+        "name": "프롬잇"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 10,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260610175350_a7e89dbb4124441f810e5f8746eba355.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "\"운동하고 먹어\" 속세맛 9종 프롬잇 단백질 충전 세트 (쉐이크2종+단백질과자7종)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "labels": [
+        {
+          "type": "EXCLUSIVE",
+          "name": "단독"
+        }
+      ],
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13719719,
+      "productId": 13719719,
+      "name": "스위치온 엔온효소 30포 3박스",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 56700,
+        "sellingPrice": 56700,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 19788,
+        "name": "스위치온"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 1,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260610162229_6b7a370ab6d34a3eb902d6216aa05e09.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "스위치온 엔온효소 30포 3박스"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13718816,
+      "productId": 13718816,
+      "name": "텀블러 증정 수분충전 익스트림 수분 이온젤 7개입 X 1박스 (일주일분) + 텀블러 증정",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 10500,
+        "sellingPrice": 10500,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 15822,
+        "name": "익스트림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 2,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260610143505_fbd51bc0092e4754a1df7ee6eabed026.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "텀블러 증정 수분충전 익스트림 수분 이온젤 7개입 X 1박스 (일주일분) + 텀블러 증정"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "specialGift": {
+        "item": "익스트림 텀블러 증정"
+      },
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13716456,
+      "productId": 13716456,
+      "name": "오메가 1:4 비율 [뉴트리원] 유기농 냉압착 호두오일 100 % 1박스",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 18900,
+        "sellingPrice": 18900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 9711,
+        "name": "뉴트리원"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 0,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260610100618_9b20ec265766455b8a4a4b0ffb46537d.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "오메가 1:4 비율 [뉴트리원] 유기농 냉압착 호두오일 100 % 1박스"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13716405,
+      "productId": 13716405,
+      "name": "[뉴트리원] 헤링오일 오메가3-9-11 1박스 1개월분 캡슐",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 19900,
+        "sellingPrice": 19900,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 9711,
+        "name": "뉴트리원"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 0,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260610095609_86d86eae2aaf4b9fa7590251be7447e1.png",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "[뉴트리원] 헤링오일 오메가3-9-11 1박스 1개월분 캡슐"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13708124,
+      "productId": 13708124,
+      "name": "황제 양태반 20g x 30병 1박스/쇼핑백 포함/플라센타",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 150000,
+        "sellingPrice": 150000,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 7494,
+        "name": "네이처드림"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 0,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260721141646_db962841b06d44f3a550744265a5ee10.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "황제 양태반 20g x 30병 1박스/쇼핑백 포함/플라센타"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": [
+              "PACKAGE_GIFT"
+            ]
+          }
+        ]
+      },
+      "tags": [
+        "PACKAGE"
+      ],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    },
+    {
+      "id": 13702846,
+      "productId": 13702846,
+      "name": "선물하기 단독 바르닭 운동인 식단 오리지널 닭가슴살 득근 세트 (총 30팩)",
+      "productType": "Shipping",
+      "price": {
+        "basicPrice": 53800,
+        "sellingPrice": 53800,
+        "discountRate": 0
+      },
+      "brand": {
+        "id": 10225,
+        "name": "바르닭"
+      },
+      "review": {
+        "positiveReviewRate": 0,
+        "reviewCount": 0
+      },
+      "wish": {
+        "wishCount": 2,
+        "isWished": false
+      },
+      "image": {
+        "imageUrl": "https://st.kakaocdn.net/product/gift/product/pe0c0q_Z0adChk5xWLYcbA/Wyu5pf0VF87ApM0bTXCvjk6ed7lZMU-aKILaC2LLvvk.jpg",
+        "imageBlindType": "NONE"
+      },
+      "displayName": {
+        "EVENT_SUG_NAME_MODEL": "선물하기 단독 바르닭 운동인 식단 오리지널 닭가슴살 득근 세트 (총 30팩)"
+      },
+      "ticket": false,
+      "tierTag": {
+        "tierTags": [
+          {
+            "tier": "1",
+            "tags": []
+          },
+          {
+            "tier": "2",
+            "tags": []
+          }
+        ]
+      },
+      "tags": [],
+      "stamp": "ON_SALE",
+      "valex": false,
+      "fomoBadge": {},
+      "displayDeliveryFee": {
+        "type": "FREE",
+        "free": true
+      },
+      "displayCategoryViews": [
+        {
+          "displaySpace": "BASIC",
+          "ldisplayCategoryId": 93,
+          "mdisplayCategoryId": 205,
+          "representative": true
+        }
+      ]
+    }
+  ]
+}

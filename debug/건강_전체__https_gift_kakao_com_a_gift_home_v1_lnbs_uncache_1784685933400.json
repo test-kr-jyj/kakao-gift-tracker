@@ -1,0 +1,498 @@
+{
+  "basicLnbMenus": [
+    {
+      "id": 1273,
+      "name": "forme",
+      "displayPeriod": {
+        "from": "20260420000000",
+        "to": "20991231235900"
+      },
+      "new": false,
+      "link": "/page/code/forme",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 1,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": true,
+      "titleAdditionalInfo": {
+        "titleType": "LOTTIE_EFFECT",
+        "luxTitleType": null,
+        "titleFileUrl": "https://t1.daumcdn.net/gift/lnb/title/lottie-effect/20260330_M_4554982633515383919.json",
+        "luxTitleFileUrl": null,
+        "subText": null,
+        "subTextColor": "",
+        "luxSubTextColor": null
+      },
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1,
+      "name": "홈",
+      "displayPeriod": {
+        "from": "20230601080500",
+        "to": "20990531081000"
+      },
+      "new": false,
+      "link": "/home",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 2,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 3,
+      "name": "랭킹",
+      "displayPeriod": {
+        "from": "20230601080700",
+        "to": "20990725083400"
+      },
+      "new": false,
+      "link": "/ranking",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 3,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1426,
+      "name": "썸머세일",
+      "displayPeriod": {
+        "from": "20260721000018",
+        "to": "20260722235959"
+      },
+      "new": false,
+      "link": "/page/36297",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 5,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1408,
+      "name": "LuX 3주년",
+      "displayPeriod": {
+        "from": "20260720100044",
+        "to": "20260726235959"
+      },
+      "new": false,
+      "link": "/page/36577",
+      "displaySpace": "ALL",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 6,
+      "customHighlight": "혜택",
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "CUSTOM",
+        "customText": "혜택",
+        "period": {
+          "startTime": "20260721000044",
+          "endTime": "20260726235959"
+        }
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1405,
+      "name": "맥주/위스키",
+      "displayPeriod": {
+        "from": "20260715000025",
+        "to": "20260726235959"
+      },
+      "new": false,
+      "link": "/page/36532",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 8,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 80,
+      "name": "AI선물탐험",
+      "displayPeriod": {
+        "from": "20231110150800",
+        "to": "20991110230800"
+      },
+      "new": false,
+      "link": "/explore",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": true,
+      "displayPriority": 13,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1056,
+      "name": "체험단",
+      "displayPeriod": {
+        "from": "20251215120000",
+        "to": "20990131235900"
+      },
+      "new": false,
+      "link": "/page/33325",
+      "displaySpace": "BASIC",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 17,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    }
+  ],
+  "luxLnbMenus": [
+    {
+      "id": 7,
+      "name": "홈",
+      "displayPeriod": {
+        "from": "20230601113400",
+        "to": "20991016113400"
+      },
+      "new": false,
+      "link": "/lux/home",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 1,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 9,
+      "name": "베스트",
+      "displayPeriod": {
+        "from": "20230601113500",
+        "to": "20990613113500"
+      },
+      "new": false,
+      "link": "/lux/best",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 2,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 8,
+      "name": "브랜드관",
+      "displayPeriod": {
+        "from": "20240711000000",
+        "to": "20990711235900"
+      },
+      "new": false,
+      "link": "/lux/brand",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 3,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1408,
+      "name": "LuX 3주년",
+      "displayPeriod": {
+        "from": "20260720100044",
+        "to": "20260726235959"
+      },
+      "new": false,
+      "link": "/page/36577",
+      "displaySpace": "ALL",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 4,
+      "customHighlight": "혜택",
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "CUSTOM",
+        "customText": "혜택",
+        "period": {
+          "startTime": "20260721000044",
+          "endTime": "20260726235959"
+        }
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1420,
+      "name": "티파니앤코",
+      "displayPeriod": {
+        "from": "20260720000025",
+        "to": "20260722235959"
+      },
+      "new": false,
+      "link": "/page/36656",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 5,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 1425,
+      "name": "바이레도",
+      "displayPeriod": {
+        "from": "20260720000050",
+        "to": "20260726235959"
+      },
+      "new": false,
+      "link": "/page/36685",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 6,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "variationId": "",
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 330,
+      "name": "추천",
+      "displayPeriod": {
+        "from": "20240201170000",
+        "to": "20990711235900"
+      },
+      "new": false,
+      "link": "/page/27181",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 10,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "conditions": [],
+      "fallback": false
+    },
+    {
+      "id": 12,
+      "name": "LuX소개",
+      "displayPeriod": {
+        "from": "20230602112300",
+        "to": "20991029112300"
+      },
+      "new": false,
+      "link": "/page/code/whats_lux",
+      "displaySpace": "LUX",
+      "decoration": false,
+      "authenticated": false,
+      "displayPriority": 11,
+      "redDot": {
+        "useRedDot": false
+      },
+      "bubble": {
+        "type": "NONE",
+        "customText": null,
+        "period": null
+      },
+      "lnbMenuType": "NORMAL",
+      "useTitleAdditionalInfo": false,
+      "ad": false,
+      "fixed": false,
+      "lnbAdBrandInfos": [],
+      "conditions": [],
+      "fallback": false
+    }
+  ]
+}

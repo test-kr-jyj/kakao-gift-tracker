@@ -1,0 +1,187 @@
+{
+  "subtabs": [
+    {
+      "text": "전체",
+      "tag": "A",
+      "cls": "btn_tab",
+      "href": "/ranking/category/11000",
+      "html": "<a role=\"tab\" class=\"btn_tab\" href=\"/ranking/category/11000\" aria-selected=\"false\" data-tiara-area-code=\"ranking.tab.2depth\"><span class=\"thumb_tab\"><img cuimg=\"\" alt=\"\" class=\"img_g\" src=\"https://img1.kakaocdn.net/thumb/R70x0@2x.fwebp.q82/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fgift_rank%2Ffront%2FfixedTabs%2FcategoryTab%2Fall_icon.png\"></span><span class=\"txt_tab\">전체</span></a>"
+    },
+    {
+      "text": "전체",
+      "tag": "SPAN",
+      "cls": "txt_tab",
+      "href": "",
+      "html": "<span class=\"txt_tab\">전체</span>"
+    },
+    {
+      "text": "교환권",
+      "tag": "A",
+      "cls": "btn_tab",
+      "href": "/ranking/category/11001",
+      "html": "<a role=\"tab\" class=\"btn_tab\" href=\"/ranking/category/11001\" aria-selected=\"false\" data-tiara-area-code=\"ranking.tab.2depth\"><span class=\"thumb_tab\"><img cuimg=\"\" alt=\"\" class=\"img_g\" src=\"http://img1.kakaocdn.net/thumb/R70x0@2x.fwebp.q82/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fgift_rank%2Fcategory%2Ff8236148b89d6f12491638d5f2443ea58e1d99b8%3Fimage_original_width%3D150%26image_original_height%3D150\""
+    },
+    {
+      "text": "교환권",
+      "tag": "SPAN",
+      "cls": "txt_tab",
+      "href": "",
+      "html": "<span class=\"txt_tab\">교환권</span>"
+    },
+    {
+      "text": "전체",
+      "tag": "BUTTON",
+      "cls": "btn_tab",
+      "href": "",
+      "html": "<button type=\"button\" role=\"tab\" class=\"btn_tab\" aria-selected=\"true\" data-tiara-area-code=\"ranking.tab.3depth\"><span class=\"txt_tab\">전체</span></button>"
+    },
+    {
+      "text": "건강식품·영양제",
+      "tag": "BUTTON",
+      "cls": "btn_tab",
+      "href": "",
+      "html": "<button type=\"button\" role=\"tab\" class=\"btn_tab\" aria-selected=\"false\" data-tiara-area-code=\"ranking.tab.3depth\"><span class=\"txt_tab\">건강식품·영양제</span></button>"
+    },
+    {
+      "text": "건강식품·영양제",
+      "tag": "SPAN",
+      "cls": "txt_tab",
+      "href": "",
+      "html": "<span class=\"txt_tab\">건강식품·영양제</span>"
+    },
+    {
+      "text": "홍삼·즙·환",
+      "tag": "BUTTON",
+      "cls": "btn_tab",
+      "href": "",
+      "html": "<button type=\"button\" role=\"tab\" class=\"btn_tab\" aria-selected=\"false\" data-tiara-area-code=\"ranking.tab.3depth\"><span class=\"txt_tab\">홍삼·즙·환</span></button>"
+    },
+    {
+      "text": "홍삼·즙·환",
+      "tag": "SPAN",
+      "cls": "txt_tab",
+      "href": "",
+      "html": "<span class=\"txt_tab\">홍삼·즙·환</span>"
+    },
+    {
+      "text": "다이어트·이너뷰티",
+      "tag": "BUTTON",
+      "cls": "btn_tab",
+      "href": "",
+      "html": "<button type=\"button\" role=\"tab\" class=\"btn_tab\" aria-selected=\"false\" data-tiara-area-code=\"ranking.tab.3depth\"><span class=\"txt_tab\">다이어트·이너뷰티</span></button>"
+    },
+    {
+      "text": "다이어트·이너뷰티",
+      "tag": "SPAN",
+      "cls": "txt_tab",
+      "href": "",
+      "html": "<span class=\"txt_tab\">다이어트·이너뷰티</span>"
+    },
+    {
+      "text": "전체 페이지",
+      "tag": "SPAN",
+      "cls": "screen_out",
+      "href": "",
+      "html": "<span class=\"screen_out\">전체 페이지</span>"
+    },
+    {
+      "text": "증정이너뷰티3입증정",
+      "tag": "SPAN",
+      "cls": "group_promo",
+      "href": "",
+      "html": "<span class=\"group_promo\"><span class=\"ico_base ico_gift\"></span><span class=\"name_promo\">증정</span><!----><span class=\"desc_promo\">이너뷰티3입증정</span><!----></span>"
+    },
+    {
+      "text": "이너뷰티3입증정",
+      "tag": "SPAN",
+      "cls": "desc_promo",
+      "href": "",
+      "html": "<span class=\"desc_promo\">이너뷰티3입증정</span>"
+    },
+    {
+      "text": "건강식품",
+      "tag": "DIV",
+      "cls": "head_info",
+      "href": "",
+      "html": "<div class=\"head_info\"><div class=\"area_prdbrand\"><gc-link data-tiara-area-code=\"global.product_list.brand\"><a class=\"link_prdbrand\" href=\"/brand/6942\"><span class=\"txt_prdbrand\">건강식품</span><span class=\"ico_base ico_arr\"></span><!----></a><!----><!----><!----><!----><!----><!----><!----><!----></gc-link></div><!----></div>"
+    },
+    {
+      "text": "건강식품",
+      "tag": "A",
+      "cls": "link_prdbrand",
+      "href": "/brand/6942",
+      "html": "<a class=\"link_prdbrand\" href=\"/brand/6942\"><span class=\"txt_prdbrand\">건강식품</span><span class=\"ico_base ico_arr\"></span><!----></a>"
+    },
+    {
+      "text": "건강식품",
+      "tag": "SPAN",
+      "cls": "txt_prdbrand",
+      "href": "",
+      "html": "<span class=\"txt_prdbrand\">건강식품</span>"
+    },
+    {
+      "text": ", 브랜드명 : 건강식품",
+      "tag": "SPAN",
+      "cls": "screen_out",
+      "href": "",
+      "html": "<span class=\"screen_out\">, 브랜드명 : 건강식품</span>"
+    },
+    {
+      "text": "즙쟁이",
+      "tag": "DIV",
+      "cls": "head_info",
+      "href": "",
+      "html": "<div class=\"head_info\"><div class=\"area_prdbrand\"><gc-link data-tiara-area-code=\"global.product_list.brand\"><a class=\"link_prdbrand\" href=\"/brand/7640\"><span class=\"txt_prdbrand\">즙쟁이</span><span class=\"ico_base ico_arr\"></span><!----></a><!----><!----><!----><!----><!----><!----><!----><!----></gc-link></div><!----></div>"
+    },
+    {
+      "text": "즙쟁이",
+      "tag": "A",
+      "cls": "link_prdbrand",
+      "href": "/brand/7640",
+      "html": "<a class=\"link_prdbrand\" href=\"/brand/7640\"><span class=\"txt_prdbrand\">즙쟁이</span><span class=\"ico_base ico_arr\"></span><!----></a>"
+    },
+    {
+      "text": "즙쟁이",
+      "tag": "SPAN",
+      "cls": "txt_prdbrand",
+      "href": "",
+      "html": "<span class=\"txt_prdbrand\">즙쟁이</span>"
+    },
+    {
+      "text": ", 브랜드명 : 즙쟁이",
+      "tag": "SPAN",
+      "cls": "screen_out",
+      "href": "",
+      "html": "<span class=\"screen_out\">, 브랜드명 : 즙쟁이</span>"
+    },
+    {
+      "text": "건강즙",
+      "tag": "DIV",
+      "cls": "head_info",
+      "href": "",
+      "html": "<div class=\"head_info\"><div class=\"area_prdbrand\"><gc-link data-tiara-area-code=\"global.product_list.brand\"><a class=\"link_prdbrand\" href=\"/brand/5782\"><span class=\"txt_prdbrand\">건강즙</span><span class=\"ico_base ico_arr\"></span><!----></a><!----><!----><!----><!----><!----><!----><!----><!----></gc-link></div><!----></div>"
+    },
+    {
+      "text": "건강즙",
+      "tag": "A",
+      "cls": "link_prdbrand",
+      "href": "/brand/5782",
+      "html": "<a class=\"link_prdbrand\" href=\"/brand/5782\"><span class=\"txt_prdbrand\">건강즙</span><span class=\"ico_base ico_arr\"></span><!----></a>"
+    },
+    {
+      "text": "건강즙",
+      "tag": "SPAN",
+      "cls": "txt_prdbrand",
+      "href": "",
+      "html": "<span class=\"txt_prdbrand\">건강즙</span>"
+    },
+    {
+      "text": ", 브랜드명 : 건강즙",
+      "tag": "SPAN",
+      "cls": "screen_out",
+      "href": "",
+      "html": "<span class=\"screen_out\">, 브랜드명 : 건강즙</span>"
+    }
+  ],
+  "firstProducts": []
+}

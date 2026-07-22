@@ -1,0 +1,613 @@
+{
+  "categoryTabs": [
+    {
+      "navId": 11000,
+      "displayName": "전체",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/categoryTab/all_icon.png"
+    },
+    {
+      "navId": 11001,
+      "displayName": "교환권",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/f8236148b89d6f12491638d5f2443ea58e1d99b8?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 14,
+          "displayName": "카페"
+        },
+        {
+          "subNavId": 15,
+          "displayName": "아이스크림·빙수"
+        },
+        {
+          "subNavId": 13,
+          "displayName": "베이커리·떡"
+        },
+        {
+          "subNavId": 12,
+          "displayName": "상품권·마트"
+        },
+        {
+          "subNavId": 16,
+          "displayName": "버거·치킨·피자"
+        },
+        {
+          "subNavId": 19,
+          "displayName": "생활편의·기타"
+        },
+        {
+          "subNavId": 17,
+          "displayName": "외식"
+        },
+        {
+          "subNavId": 18,
+          "displayName": "영화·레저"
+        }
+      ]
+    },
+    {
+      "navId": 2,
+      "displayName": "뷰티",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/a1a53c7837e8d0b160594d0ff59c19dcd38ee11d?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 178,
+          "displayName": "바디·핸드케어"
+        },
+        {
+          "subNavId": 182,
+          "displayName": "남성화장품"
+        },
+        {
+          "subNavId": 177,
+          "displayName": "향수"
+        },
+        {
+          "subNavId": 184,
+          "displayName": "헤어·소품"
+        },
+        {
+          "subNavId": 179,
+          "displayName": "스킨케어"
+        },
+        {
+          "subNavId": 181,
+          "displayName": "메이크업"
+        }
+      ]
+    },
+    {
+      "navId": 4,
+      "displayName": "식품",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/0bec12e2a3dc1c2077e557f750e577c18706deab?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 375,
+          "displayName": "떡·한과"
+        },
+        {
+          "subNavId": 202,
+          "displayName": "축산·수산"
+        },
+        {
+          "subNavId": 320,
+          "displayName": "케이크"
+        },
+        {
+          "subNavId": 103,
+          "displayName": "디저트"
+        },
+        {
+          "subNavId": 102,
+          "displayName": "가공·간편식"
+        },
+        {
+          "subNavId": 373,
+          "displayName": "김치·반찬"
+        },
+        {
+          "subNavId": 206,
+          "displayName": "채소·쌀·잡곡"
+        },
+        {
+          "subNavId": 188,
+          "displayName": "커피·차·음료"
+        },
+        {
+          "subNavId": 203,
+          "displayName": "과일·견과"
+        },
+        {
+          "subNavId": 101,
+          "displayName": "유제품·아이스크림"
+        }
+      ]
+    },
+    {
+      "navId": 8,
+      "displayName": "건강",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/6ecbe3566bad752359decc9508fab83253a36102?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 204,
+          "displayName": "건강식품·영양제"
+        },
+        {
+          "subNavId": 374,
+          "displayName": "홍삼·즙·환"
+        },
+        {
+          "subNavId": 205,
+          "displayName": "다이어트·이너뷰티"
+        }
+      ]
+    },
+    {
+      "navId": 5,
+      "displayName": "리빙",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/b06bb314ec8d8f509b4726d55a52a553d2ddf1a0?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 329,
+          "displayName": "팬시·캐릭터"
+        },
+        {
+          "subNavId": 109,
+          "displayName": "식물·꽃배달"
+        },
+        {
+          "subNavId": 111,
+          "displayName": "캔들디퓨저 인센스"
+        },
+        {
+          "subNavId": 429,
+          "displayName": "차량용방향제"
+        },
+        {
+          "subNavId": 185,
+          "displayName": "침구·패브릭"
+        },
+        {
+          "subNavId": 114,
+          "displayName": "인테리어"
+        },
+        {
+          "subNavId": 115,
+          "displayName": "생필품"
+        },
+        {
+          "subNavId": 113,
+          "displayName": "조명·무드등"
+        },
+        {
+          "subNavId": 112,
+          "displayName": "가구·DIY"
+        },
+        {
+          "subNavId": 116,
+          "displayName": "수납·생활"
+        },
+        {
+          "subNavId": 110,
+          "displayName": "주방·수입주방"
+        },
+        {
+          "subNavId": 286,
+          "displayName": "문구·취미"
+        }
+      ]
+    },
+    {
+      "navId": 1,
+      "displayName": "패션",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/0eee26f68f2f600aea9ef4ebf9e8cc80336b42da?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 170,
+          "displayName": "여성의류"
+        },
+        {
+          "subNavId": 378,
+          "displayName": "지갑"
+        },
+        {
+          "subNavId": 169,
+          "displayName": "모자"
+        },
+        {
+          "subNavId": 431,
+          "displayName": "우산·양산"
+        },
+        {
+          "subNavId": 380,
+          "displayName": "잡화·ACC"
+        },
+        {
+          "subNavId": 171,
+          "displayName": "가방"
+        },
+        {
+          "subNavId": 172,
+          "displayName": "슈즈"
+        },
+        {
+          "subNavId": 381,
+          "displayName": "남성의류"
+        },
+        {
+          "subNavId": 211,
+          "displayName": "파자마"
+        },
+        {
+          "subNavId": 173,
+          "displayName": "언더웨어"
+        },
+        {
+          "subNavId": 167,
+          "displayName": "주얼리·시계"
+        }
+      ]
+    },
+    {
+      "navId": 7,
+      "displayName": "가전·디지털",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/f2cbd9cfaad6eac884a3899f3007e6a4a969ba35?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 163,
+          "displayName": "계절가전"
+        },
+        {
+          "subNavId": 157,
+          "displayName": "베터리·충전기"
+        },
+        {
+          "subNavId": 158,
+          "displayName": "영상·음향가전"
+        },
+        {
+          "subNavId": 161,
+          "displayName": "뷰티가전"
+        },
+        {
+          "subNavId": 160,
+          "displayName": "생활가전"
+        },
+        {
+          "subNavId": 290,
+          "displayName": "카메라"
+        },
+        {
+          "subNavId": 382,
+          "displayName": "모바일·웨어러블"
+        },
+        {
+          "subNavId": 384,
+          "displayName": "게임"
+        },
+        {
+          "subNavId": 383,
+          "displayName": "PC·노트북·모니터"
+        },
+        {
+          "subNavId": 198,
+          "displayName": "케이스·커버"
+        },
+        {
+          "subNavId": 164,
+          "displayName": "건강가전"
+        },
+        {
+          "subNavId": 159,
+          "displayName": "주방가전"
+        }
+      ]
+    },
+    {
+      "navId": 3,
+      "displayName": "유아동",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/5987437529362973891919f7427b4b1276688f1f?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 138,
+          "displayName": "베이비·키즈패션"
+        },
+        {
+          "subNavId": 141,
+          "displayName": "유아교육·도서"
+        },
+        {
+          "subNavId": 142,
+          "displayName": "기저귀·물티슈"
+        },
+        {
+          "subNavId": 144,
+          "displayName": "임신·출산·육아"
+        },
+        {
+          "subNavId": 136,
+          "displayName": "신생아선물세트"
+        },
+        {
+          "subNavId": 139,
+          "displayName": "장난감·인형"
+        },
+        {
+          "subNavId": 143,
+          "displayName": "분유·이유식·간식"
+        }
+      ]
+    },
+    {
+      "navId": 11,
+      "displayName": "카카오프렌즈",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/579949daa5d909af887f11061241ef9f4c03fd6b?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 6,
+      "displayName": "레저·스포츠",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/4107daa1fe01cbdc3080f217a9a9658975f4c31c?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 118,
+          "displayName": "스포츠의류"
+        },
+        {
+          "subNavId": 122,
+          "displayName": "캠핑·여행"
+        },
+        {
+          "subNavId": 124,
+          "displayName": "요가·헬스·수영"
+        },
+        {
+          "subNavId": 120,
+          "displayName": "스포츠잡화·용품"
+        },
+        {
+          "subNavId": 123,
+          "displayName": "골프"
+        },
+        {
+          "subNavId": 121,
+          "displayName": "등산·아웃도어"
+        },
+        {
+          "subNavId": 197,
+          "displayName": "차량용품"
+        },
+        {
+          "subNavId": 119,
+          "displayName": "운동화·슬리퍼"
+        }
+      ]
+    },
+    {
+      "navId": 9,
+      "displayName": "명품패션",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/e74d13a344638d75a74f815c752d6b12b33b16f9?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 21,
+      "displayName": "책·음반티켓",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/bc95e3f4fa630c8ca68786dedb46cc501bf697a7?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 334,
+          "displayName": "앨범·LP"
+        },
+        {
+          "subNavId": 387,
+          "displayName": "도서·DVD"
+        },
+        {
+          "subNavId": 385,
+          "displayName": "MD·굿즈"
+        }
+      ]
+    },
+    {
+      "navId": 34,
+      "displayName": "주류",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/e60e0616a81b59e4d9d2779674bf0e56b8b938ff?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 346,
+          "displayName": "전통주"
+        },
+        {
+          "subNavId": 345,
+          "displayName": "양주"
+        },
+        {
+          "subNavId": 347,
+          "displayName": "맥주·기타"
+        },
+        {
+          "subNavId": 344,
+          "displayName": "와인"
+        }
+      ]
+    },
+    {
+      "navId": 20,
+      "displayName": "반려동물",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/category/74935a3da8d4985e39f4def9e5504faa06b9b6d8?image_original_width=150&image_original_height=150",
+      "lowerCategories": [
+        {
+          "subNavId": 11100,
+          "displayName": "전체"
+        },
+        {
+          "subNavId": 315,
+          "displayName": "기타 소동물용품"
+        },
+        {
+          "subNavId": 314,
+          "displayName": "고양이 간식·용품"
+        },
+        {
+          "subNavId": 313,
+          "displayName": "강아지 간식·용품"
+        }
+      ]
+    }
+  ],
+  "giftThemeTabs": [
+    {
+      "navId": 27,
+      "name": "복날",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/2192fbc6760aeed1db06664640c6af1dd70f1144?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 1,
+      "name": "생일",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/59273cc271476cdfd4bf39b381db8b75c16e86a4?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 4,
+      "name": "이사·집들이",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/0f89332144df6a2796270883a71ce25bfce4b9d9?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 19,
+      "name": "감사",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/45a926c0cc32e6202b51c5610633d7a7545dca4b?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 2,
+      "name": "응원",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/433eb488adb847c66226737c5c46cce449b17beb?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 5,
+      "name": "임신·출산",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/b1ab9ab4d8045f271286180cb657a1762f2a700c?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 6,
+      "name": "결혼",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/d535250a2d42cbcd9905276e4781b31497393109?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 14,
+      "name": "직장동료",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/b520f4c32517238a918e5e0c47d09f2dafeca046?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 18,
+      "name": "친구",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/cf416dac4f145d2fa709c852f400cf4e61f75f5d?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 13,
+      "name": "여친",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/579e6d509252deabbe44d6b4269e0ecb49e53596?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 12,
+      "name": "남친",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/fc4d49211769f02c4ad2ab5c9e00c9bde4581a37?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 9,
+      "name": "재미",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/431784298cf804009d7140dbf2bd060eb165a59e?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 7,
+      "name": "백일·돌",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/e5ca93a5e1587367ee28f27dabe752e912b0e24f?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 11,
+      "name": "엄마",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/55a49fae74acfe3e10b793e9f443efb5ba5026ec?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 10,
+      "name": "아빠",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/display-tag/39a6d96b5f3f6dd825957e371b249e474d03f41f?image_original_width=150&image_original_height=150"
+    }
+  ],
+  "trendingTabs": [
+    {
+      "navId": 10000,
+      "displayName": "전체",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/trendingTab/all_icon.png"
+    },
+    {
+      "navId": 10001,
+      "displayName": "내돈내산",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/trendingTab/img_tab_own_3.png"
+    },
+    {
+      "navId": 12,
+      "displayName": "신상",
+      "imageUrl": "http://t1.kakaocdn.net/gift_rank/promotion/c4856f65ee5fa9bef71488e1bb1a1cd5e38f6356?image_original_width=150&image_original_height=150"
+    },
+    {
+      "navId": 10002,
+      "displayName": "위시TOP",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/trendingTab/img_tab_wish_3.png"
+    },
+    {
+      "navId": 10003,
+      "displayName": "단독",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/trendingTab/img_tab_single_3.png"
+    },
+    {
+      "navId": 10005,
+      "displayName": "할인·혜택",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/trendingTab/img_tab_sale_3.png"
+    },
+    {
+      "navId": 10004,
+      "displayName": "NEW",
+      "imageUrl": "https://t1.kakaocdn.net/gift_rank/front/fixedTabs/trendingTab/img_tab_new_3.png"
+    }
+  ]
+}

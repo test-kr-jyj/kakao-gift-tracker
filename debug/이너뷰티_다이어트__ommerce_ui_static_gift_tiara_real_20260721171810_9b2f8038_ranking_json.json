@@ -1,0 +1,1048 @@
+{
+  "ranking.filter_btn": {
+    "description": "랭킹 > 필터링 버튼",
+    "selector": "",
+    "variables": [
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 버튼"
+      },
+      "click": {
+        "layer1": "filter_btn",
+        "copy": "랭킹 > 필터링 버튼"
+      }
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer": {
+    "description": "랭킹 > 필터링 레이어",
+    "selector": "",
+    "variables": [
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "vimp": {
+      "imp_id": "ranking.filter_layer",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "ranking.filter_layer",
+      "imp_ordnum": "",
+      "layer1": "filter_layer"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.age_range": {
+    "description": "랭킹 > 필터링 레이어 > 연령대 조건",
+    "selector": "",
+    "variables": [
+      "ageFilter"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 연령대 조건"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "age_range",
+        "copy": "랭킹 > 필터링 레이어 > 연령대 조건"
+      }
+    },
+    "customProps": {
+      "age_filter": "${ageFilter}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.gender": {
+    "description": "랭킹 > 필터링 레이어 > 성별 조건",
+    "selector": "",
+    "variables": [
+      "genderFilter"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 성별 조건"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "gender",
+        "copy": "랭킹 > 필터링 레이어 > 성별 조건"
+      }
+    },
+    "customProps": {
+      "gender_filter": "${genderFilter}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.price_range": {
+    "description": "랭킹 > 필터링 레이어 > 가격대 조건",
+    "selector": "",
+    "variables": [
+      "priceFilter"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 가격대 조건"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "price_range",
+        "copy": "랭킹 > 필터링 레이어 > 가격대 조건"
+      }
+    },
+    "customProps": {
+      "price_filter": "${priceFilter}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.price_range.input_box": {
+    "description": "랭킹 > 필터링 레이어 > 가격대 조건 > 직접입력",
+    "selector": "",
+    "variables": [
+      "priceMax",
+      "priceMin"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 가격대 조건 > 직접입력"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "price_range",
+        "layer3": "input_box",
+        "copy": "랭킹 > 필터링 레이어 > 가격대 조건 > 직접입력"
+      }
+    },
+    "customProps": {
+      "price_min": "${priceMin}",
+      "price_max": "${priceMax}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.price_range.reset_btn": {
+    "description": "랭킹 > 필터링 레이어 > 가격대 조건 > 가격 초기화",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 가격대 조건 > 가격 초기화"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "price_range",
+        "layer3": "reset_btn",
+        "copy": "랭킹 > 필터링 레이어 > 가격대 조건 > 가격 초기화"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.reset_btn": {
+    "description": "랭킹 > 필터링 레이어 > 필터링 조건 초기화 버튼",
+    "selector": "",
+    "variables": [],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 필터링 조건 초기화 버튼"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "reset_btn",
+        "copy": "랭킹 > 필터링 레이어 > 필터링 조건 초기화 버튼"
+      }
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.filter_layer.view_ranking_btn": {
+    "description": "랭킹 > 필터링 레이어 > 랭킹보기 버튼",
+    "selector": "",
+    "variables": [
+      "ageFilter",
+      "genderFilter",
+      "priceFilter",
+      "priceMax",
+      "priceMin",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 필터링 레이어 > 랭킹보기 버튼"
+      },
+      "click": {
+        "layer1": "filter_layer",
+        "layer2": "view_ranking_btn",
+        "copy": "랭킹 > 필터링 레이어 > 랭킹보기 버튼"
+      }
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "gender_filter": "${genderFilter}",
+      "age_filter": "${ageFilter}",
+      "price_filter": "${priceFilter}' price_min:'${priceMin}",
+      "price_max": "${priceMax}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.no_search_result": {
+    "description": "랭킹 > 상품목록 > 결과없음",
+    "selector": "",
+    "variables": [
+      "ageFilter",
+      "genderFilter",
+      "priceFilter",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "vimp": {
+      "imp_id": "ranking.product_list.no_search_result",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.no_search_result",
+      "imp_ordnum": "",
+      "layer1": "product_list",
+      "layer2": "no_search_result"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "gender_filter": "${genderFilter}",
+      "age_filter": "${ageFilter}",
+      "price_filter": "${priceFilter}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.product": {
+    "description": "랭킹 > 상품목록 > 상품 (일반/광고)",
+    "selector": "",
+    "variables": [
+      "adSlotCarouselNum",
+      "adTrackId",
+      "adType",
+      "ageFilter",
+      "contentsId",
+      "deliveryFreeFilter",
+      "experiments",
+      "feedbackData",
+      "genderFilter",
+      "kcAdCid",
+      "ordNum",
+      "priceFilter",
+      "productId",
+      "productName",
+      "productType",
+      "socialBadge",
+      "socialBadgeType",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 상품목록 > 상품 (일반/광고) 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product",
+        "copy": "랭킹 > 상품목록 > 상품 (일반/광고)",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product-${productId}-${ordNum}",
+        "imp_provider": ""
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product"
+      },
+      "adTrackId": "${adTrackId}"
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product-${productId}-${ordNum}",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customObjs": {
+      "service_obj": {
+        "feedback_data": "${feedbackData}",
+        "experiments": "${experiments}"
+      }
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "social_badge": "${socialBadge}",
+      "social_badge_type": "${socialBadgeType}",
+      "gender_filter": "${genderFilter}",
+      "age_filter": "${ageFilter}",
+      "price_filter": "${priceFilter}",
+      "ad_type": "${adType}",
+      "ad_slot_carousel_num": "${adSlotCarouselNum}",
+      "contents_id": "${contentsId}",
+      "kc_ad_cid": "${kcAdCid}",
+      "delivery_free_filter": "${deliveryFreeFilter}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": true,
+    "useExperimentsClick": true,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": true
+  },
+  "ranking.product_list.product_ad.1": {
+    "description": "랭킹 > 카테고리 > 광고 상품_1번째_PC",
+    "selector": "",
+    "variables": [
+      "contentType",
+      "contentsId",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "sourceSystem",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 카테고리 > 광고 상품_1번째_PC 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product_ad",
+        "layer3": "1",
+        "copy": "랭킹 > 카테고리 > 광고 상품_1번째_PC",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product_ad.1-${productId}-${ordNum}",
+        "imp_provider": "COMMERCE_AD_CENTER"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product_ad.1"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product_ad.1-${productId}-${ordNum}",
+      "imp_provider": "COMMERCE_AD_CENTER",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product_ad.1",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product_ad",
+      "layer3": "1",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "source_system": "${sourceSystem}",
+      "content_type": "${contentType}",
+      "contents_id": "${contentsId}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.product_ad.2": {
+    "description": "랭킹 > 카테고리 > 광고 상품_1번째 뒤",
+    "selector": "",
+    "variables": [
+      "contentType",
+      "contentsId",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "sourceSystem",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 카테고리 > 광고 상품_1번째 뒤 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product_ad",
+        "layer3": "2",
+        "copy": "랭킹 > 카테고리 > 광고 상품_1번째 뒤",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product_ad.2-${productId}-${ordNum}",
+        "imp_provider": "COMMERCE_AD_CENTER"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product_ad.2"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product_ad.2-${productId}-${ordNum}",
+      "imp_provider": "COMMERCE_AD_CENTER",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product_ad.2",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product_ad",
+      "layer3": "2",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "source_system": "${sourceSystem}",
+      "content_type": "${contentType}",
+      "contents_id": "${contentsId}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.product_ad.21": {
+    "description": "랭킹 > 카테고리/선물테마 > 광고 상품_20번째 뒤",
+    "selector": "",
+    "variables": [
+      "contentType",
+      "contentsId",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "sourceSystem",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 카테고리/선물테마 > 광고 상품_20번째 뒤 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product_ad",
+        "layer3": "21",
+        "copy": "랭킹 > 카테고리/선물테마 > 광고 상품_20번째 뒤",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product_ad.21-${productId}-${ordNum}",
+        "imp_provider": "GIFT_ADMIN"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product_ad.21"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product_ad.21-${productId}-${ordNum}",
+      "imp_provider": "GIFT_ADMIN",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product_ad.21",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product_ad",
+      "layer3": "21",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "source_system": "${sourceSystem}",
+      "content_type": "${contentType}",
+      "contents_id": "${contentsId}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.product_ad.3": {
+    "description": "랭킹 > 선물테마 > 광고 상품_2번째 뒤",
+    "selector": "",
+    "variables": [
+      "contentType",
+      "contentsId",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "sourceSystem",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 선물테마 > 광고 상품_2번째 뒤 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product_ad",
+        "layer3": "3",
+        "copy": "랭킹 > 선물테마 > 광고 상품_2번째 뒤",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product_ad.3-${productId}-${ordNum}",
+        "imp_provider": "GIFT_ADMIN"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product_ad.3"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product_ad.3-${productId}-${ordNum}",
+      "imp_provider": "GIFT_ADMIN",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product_ad.3",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product_ad",
+      "layer3": "3",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "source_system": "${sourceSystem}",
+      "content_type": "${contentType}",
+      "contents_id": "${contentsId}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.product_ad.6": {
+    "description": "랭킹 > 카테고리/선물테마 > 광고 상품_5번째 뒤",
+    "selector": "",
+    "variables": [
+      "contentType",
+      "contentsId",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "sourceSystem",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 카테고리/선물테마 > 광고 상품_5번째 뒤 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product_ad",
+        "layer3": "6",
+        "copy": "랭킹 > 카테고리/선물테마 > 광고 상품_5번째 뒤",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product_ad.6-${productId}-${ordNum}",
+        "imp_provider": "GIFT_ADMIN"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product_ad.6"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product_ad.6-${productId}-${ordNum}",
+      "imp_provider": "GIFT_ADMIN",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product_ad.6",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product_ad",
+      "layer3": "6",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "source_system": "${sourceSystem}",
+      "content_type": "${contentType}",
+      "contents_id": "${contentsId}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.product_list.product_ad.9": {
+    "description": "랭킹 > 카테고리/선물테마 > 광고 상품_8번째 뒤_PC",
+    "selector": "",
+    "variables": [
+      "contentType",
+      "contentsId",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "sourceSystem",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 카테고리/선물테마 > 광고 상품_8번째 뒤_PC 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product_list",
+        "layer2": "product_ad",
+        "layer3": "9",
+        "copy": "랭킹 > 카테고리/선물테마 > 광고 상품_8번째 뒤_PC",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.product_list.product_ad.9-${productId}-${ordNum}",
+        "imp_provider": "GIFT_ADMIN"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.product_list.product_ad.9"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.product_list.product_ad.9-${productId}-${ordNum}",
+      "imp_provider": "GIFT_ADMIN",
+      "imp_type": "vimp",
+      "imp_area": "ranking.product_list.product_ad.9",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product_list",
+      "layer2": "product_ad",
+      "layer3": "9",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "source_system": "${sourceSystem}",
+      "content_type": "${contentType}",
+      "contents_id": "${contentsId}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.reco_slot.product": {
+    "description": "랭킹 > 연관 상품 추천 슬롯",
+    "selector": "",
+    "variables": [
+      "feedbackData",
+      "ordNum",
+      "productId",
+      "productName",
+      "productType",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 연관 상품 추천 슬롯 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "reco_slot",
+        "layer2": "product",
+        "copy": "랭킹 > 연관 상품 추천 슬롯",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.reco_slot.product-${productId}-${ordNum}",
+        "imp_provider": "AI_COMMERCE"
+      },
+      "purchaseEntry": {
+        "pageEntryId": "ranking.reco_slot.product"
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.reco_slot.product-${productId}-${ordNum}",
+      "imp_provider": "AI_COMMERCE",
+      "imp_type": "vimp",
+      "imp_area": "ranking.reco_slot.product",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "reco_slot",
+      "layer2": "product",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customObjs": {
+      "service_obj": {
+        "feedback_data": "${feedbackData}"
+      }
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.tab.1depth": {
+    "description": "랭킹 > 1depth 탭",
+    "selector": "",
+    "variables": [
+      "ordNum",
+      "tab1depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 1depth 탭 클릭"
+      },
+      "click": {
+        "layer1": "tab",
+        "layer2": "1depth",
+        "copy": "랭킹 > 1depth 탭",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.tab.1depth-${ordNum}",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.tab.1depth-${ordNum}",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "ranking.tab.1depth",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "tab",
+      "layer2": "1depth"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ordnum": "${ordNum}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.tab.2depth": {
+    "description": "랭킹 > 2depth 탭",
+    "selector": "",
+    "variables": [
+      "ordNum",
+      "tab1depthName",
+      "tab2depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 2depth 탭 클릭"
+      },
+      "click": {
+        "layer1": "tab",
+        "layer2": "2depth",
+        "copy": "랭킹 > 2depth 탭",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.tab.2depth-${ordNum}",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.tab.2depth-${ordNum}",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "ranking.tab.2depth",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "tab",
+      "layer2": "2depth"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ordnum": "${ordNum}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  },
+  "ranking.tab.3depth": {
+    "description": "랭킹 > 3depth 탭",
+    "selector": "",
+    "variables": [
+      "ordNum",
+      "tab1depthName",
+      "tab2depthName",
+      "tab3depthName"
+    ],
+    "click": {
+      "action": {
+        "name": "랭킹 > 3depth 탭 클릭"
+      },
+      "click": {
+        "layer1": "tab",
+        "layer2": "3depth",
+        "copy": "랭킹 > 3depth 탭",
+        "ordnum": "${ordNum}",
+        "imp_id": "ranking.tab.3depth-${ordNum}",
+        "imp_provider": ""
+      }
+    },
+    "vimp": {
+      "imp_id": "ranking.tab.3depth-${ordNum}",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "ranking.tab.3depth",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "tab",
+      "layer2": "3depth"
+    },
+    "customProps": {
+      "ranking_tab_name": "${tab1depthName}",
+      "ranking_2depth_name": "${tab2depthName}",
+      "ranking_3depth_name": "${tab3depthName}",
+      "ordnum": "${ordNum}"
+    },
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "ads": [
+    {
+      "products": [
+        {
+          "product": {
+            "id": 13657047,
+            "productId": 13657047,
+            "name": "[센트룸] 이뮨 부스트 데일리 프로텍션C 14포 2개입",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 29800,
+              "sellingPrice": 29800,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 6927,
+              "name": "센트룸"
+            },
+            "wish": {
+              "wishCount": 21,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260527164057_76b763c140fc4a648b8c4c3718cf8c59.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "[센트룸] 이뮨 부스트 데일리 프로텍션C 14포 2개입"
+            },
+            "ticket": false,
+            "tags": [
+              "PACKAGE"
+            ],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65825
+        },
+        {
+          "product": {
+            "id": 2191632,
+            "productId": 2191632,
+            "name": "건강/부모님/생일 \"대한민국1등콜라겐\" 에버콜라겐 타임 50포 (1박스)",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 44900,
+              "sellingPrice": 44900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 9104,
+              "name": "에버콜라겐"
+            },
+            "wish": {
+              "wishCount": 1636,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260720092929_ac1c11b802964c8392bb6ba81db53660.png",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "건강/부모님/생일 \"대한민국1등콜라겐\" 에버콜라겐 타임 50포 (1박스)"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 205,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65581
+        },
+        {
+          "product": {
+            "id": 9646819,
+            "productId": 9646819,
+            "name": "웰릿 미니언즈 [단독]웰릿 이뮨베라 1박스 x 미니언즈 밥앤팀 인형+아크릴 듀얼 키링(택1/인형 포장) + 10종 스티커 1개 증정 선물세트",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 29900,
+              "sellingPrice": 29900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 17091,
+              "name": "웰릿"
+            },
+            "wish": {
+              "wishCount": 7408,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260622141623_f3d1fbb48fc34b059552012689a2545e.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "웰릿 미니언즈 [단독]웰릿 이뮨베라 1박스 x 미니언즈 밥앤팀 인형+아크릴 듀얼 키링(택1/인형 포장) + 10종 스티커 1개 증정 선물세트"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "미니언즈 인형+아크릴 듀얼 키링/택1"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65873
+        },
+        {
+          "product": {
+            "id": 13869668,
+            "productId": 13869668,
+            "name": "관절엔 콘드로이친 1200 선물세트 (2개월분/선물포장))",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 128000,
+              "sellingPrice": 128000,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 19814,
+              "name": "주영엔에스"
+            },
+            "wish": {
+              "wishCount": 11,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260716091340_d46b74e7c75e48328ff22a2c2221f92a.png",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "관절엔 콘드로이친 1200 선물세트 (2개월분/선물포장))"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65943
+        },
+        {
+          "product": {
+            "id": 10894352,
+            "productId": 10894352,
+            "name": "원조 한팩비타민 트루바이타민 1박스(1개월분) 고함량 비타민 부모님 수험생 직장인 선물 활력충전 프리미엄 멀티비타민",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 25000,
+              "sellingPrice": 25000,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 11998,
+              "name": "덴프스"
+            },
+            "wish": {
+              "wishCount": 5868,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260629150406_f559b1bd492745ba9492849e118a066f.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "원조 한팩비타민 트루바이타민 1박스(1개월분) 고함량 비타민 부모님 수험생 직장인 선물 활력충전 프리미엄 멀티비타민"
+            },
+            "ticket": false,
+            "tags": [
+              "PACKAGE"
+            ],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "포토리뷰 이벤트"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65022
+        },
+        {
+          "product": {
+            "id": 13330013,
+            "productId": 13330013,
+            "name": "비타민선물 [호빵맨 키링 증정] 돌려서 톡! 호빵맨 트위스트샷 에너지 10개입 / 고함량 멀티비타민&미네랄 응원선물 직장동료선물",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 30000,
+              "sellingPrice": 30000,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 7942,
+              "name": "유한건강생활"
+            },
+            "wish": {
+              "wishCount": 7196,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260702165811_10013641b7214d5d959b977a115f8d20.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "비타민선물 [호빵맨 키링 증정] 돌려서 톡! 호빵맨 트위스트샷 에너지 10개입 / 고함량 멀티비타민&미네랄 응원선물 직장동료선물"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "한정판 호빵맨 스티커 증정"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65900
+        }
+      ],
+      "type": "CMAAS",
+      "position": 2,
+      "pcPosition": 1,
+      "placement": "DELIVERY_POSITION_1"
+    },
+    {
+      "products": [
+        {
+          "product": {
+            "id": 6576216,
+            "productId": 6576216,
+            "name": "아임비타 이뮨샷 포차코에디션 10입 + 밀크컵 증정 /멀티비타민 비타민선물 응원선물 에너지 선물 직장동료선물",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 27900,
+              "sellingPrice": 27900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 859,
+              "name": "종근당건강"
+            },
+            "wish": {
+              "wishCount": 67663,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260722092256_66198d415f444c95899ee28f92d61552.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "아임비타 이뮨샷 포차코에디션 10입 + 밀크컵 증정 /멀티비타민 비타민선물 응원선물 에너지 선물 직장동료선물"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "아임비타X포차코 밀크컵 증정"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 66370
+        },
+        {
+          "product": {
+            "id": 10190744,
+            "productId": 10190744,
+            "name": "아르기닌 증정 종합비타민 선물 [한팩 종합비타민 멀티비타민+오메가3+루테인+밀크씨슬] 올인원 포맨 멀티팩 30포 1박스 + 아르기닌 증정",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 38900,
+              "sellingPrice": 38900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 15822,
+              "name": "익스트림"
+            },
+            "wish": {
+              "wishCount": 1622,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260708141856_f0e0f45d5a7a47ba9e5f926e0b2096fe.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "아르기닌 증정 종합비타민 선물 [한팩 종합비타민 멀티비타민+오메가3+루테인+밀크씨슬] 올인원 포맨 멀티팩 30포 1박스 + 아르기닌 증정"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "트리플 아르기닌 10포 증정"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "AD",
+          "adContentId": 65999
+        }
+      ],
+      "type": "CMAAS",
+      "position": 6,
+      "pcPosition": 9,
+      "placement": "DELIVERY_POSITION_6"
+    },
+    {
+      "products": [
+        {
+          "product": {
+            "id": 13852871,
+            "productId": 13852871,
+            "name": "한국인 맞춤 비타민 옵티젠 이뮨 멀티비타민&미네랄 4입 / 1박스",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 12900,
+              "sellingPrice": 12900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 17059,
+              "name": "옵티젠"
+            },
+            "wish": {
+              "wishCount": 17,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260703171917_e41a2148b96b4ddaa8c146ae9e428f31.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "한국인 맞춤 비타민 옵티젠 이뮨 멀티비타민&미네랄 4입 / 1박스"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "",
+          "adContentId": 66047
+        },
+        {
+          "product": {
+            "id": 12229110,
+            "productId": 12229110,
+            "name": "미니언즈 x 비비슨 구미젤리비타민 4종 택1(멀티비타민/비타민C&D/애플사이다비니거/고함량D)",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 19900,
+              "sellingPrice": 19900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 19086,
+              "name": "비비슨"
+            },
+            "wish": {
+              "wishCount": 3780,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260720091817_f884d6f81f304aba8b719e7fee5773fc.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "미니언즈 x 비비슨 구미젤리비타민 4종 택1(멀티비타민/비타민C&D/애플사이다비니거/고함량D)"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "미니언즈 키링 증정!"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "",
+          "adContentId": 66045
+        },
+        {
+          "product": {
+            "id": 9646819,
+            "productId": 9646819,
+            "name": "웰릿 미니언즈 [단독]웰릿 이뮨베라 1박스 x 미니언즈 밥앤팀 인형+아크릴 듀얼 키링(택1/인형 포장) + 10종 스티커 1개 증정 선물세트",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 29900,
+              "sellingPrice": 29900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 17091,
+              "name": "웰릿"
+            },
+            "wish": {
+              "wishCount": 7408,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260622141623_f3d1fbb48fc34b059552012689a2545e.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "웰릿 미니언즈 [단독]웰릿 이뮨베라 1박스 x 미니언즈 밥앤팀 인형+아크릴 듀얼 키링(택1/인형 포장) + 10종 스티커 1개 증정 선물세트"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "specialGift": {
+              "item": "미니언즈 인형+아크릴 듀얼 키링/택1"
+            },
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 204,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "",
+          "adContentId": 66048
+        },
+        {
+          "product": {
+            "id": 7512381,
+            "productId": 7512381,
+            "name": "단독 진세노 10mg [파워이뮨 비타민 증정] 춘식이가 응원해! 힘내라 홍삼정 6년근 홍삼스틱 30포 1박스/생일 축하 대박 친구 직장 응원",
+            "productType": "Shipping",
+            "price": {
+              "basicPrice": 17900,
+              "sellingPrice": 17900,
+              "discountRate": 0
+            },
+            "brand": {
+              "id": 16156,
+              "name": "설혜담"
+            },
+            "wish": {
+              "wishCount": 22883,
+              "isWished": false
+            },
+            "image": {
+              "imageUrl": "https://st.kakaocdn.net/product/gift/product/20260624171535_5cd347f590ca415ba2747e74e342b411.jpg",
+              "imageBlindType": "NONE"
+            },
+            "displayName": {
+              "EVENT_SUG_NAME_MODEL": "단독 진세노 10mg [파워이뮨 비타민 증정] 춘식이가 응원해! 힘내라 홍삼정 6년근 홍삼스틱 30포 1박스/생일 축하 대박 친구 직장 응원"
+            },
+            "ticket": false,
+            "tags": [],
+            "stamp": "ON_SALE",
+            "valex": false,
+            "displayDeliveryFee": {
+              "type": "FREE",
+              "free": true
+            },
+            "displayCategoryViews": [
+              {
+                "displaySpace": "BASIC",
+                "ldisplayCategoryId": 93,
+                "mdisplayCategoryId": 374,
+                "representative": true
+              }
+            ]
+          },
+          "adBadge": "",
+          "adContentId": 66049
+        }
+      ],
+      "type": "CMAAS",
+      "position": 21,
+      "pcPosition": 21,
+      "placement": "DELIVERY_MD_POSITION"
+    }
+  ]
+}

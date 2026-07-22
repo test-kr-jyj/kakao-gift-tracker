@@ -1,0 +1,66 @@
+{
+  "exclusive_more.product": {
+    "description": "",
+    "selector": "",
+    "variables": [
+      "ordNum",
+      "productId",
+      "productName",
+      "productType"
+    ],
+    "click": {
+      "action": {
+        "name": "단독 추천 상품 > 상품 클릭",
+        "kind": "ClickContent"
+      },
+      "eventMeta": {
+        "id": "${productId}",
+        "type": "product",
+        "name": "${productName}"
+      },
+      "click": {
+        "layer1": "product",
+        "copy": "단독 추천 상품 > 상품",
+        "ordnum": "${ordNum}",
+        "imp_id": "exclusive_more.product-${productId}-${ordNum}",
+        "imp_provider": ""
+      },
+      "purchaseEntry": {
+        "pageEntryId": "exclusive_more.product"
+      }
+    },
+    "vimp": {
+      "imp_id": "exclusive_more.product-${productId}-${ordNum}",
+      "imp_provider": "",
+      "imp_type": "vimp",
+      "imp_area": "exclusive_more.product",
+      "imp_ordnum": "${ordNum}",
+      "layer1": "product",
+      "type": "product",
+      "id": "${productId}",
+      "name": "${productName}"
+    },
+    "customProps": {
+      "initial_pick_theme_name": "${initialPickThemeName}",
+      "product_type": "${productType}",
+      "id_service": "gift",
+      "ordnum": "${ordNum}"
+    },
+    "context": [
+      {
+        "type": "product",
+        "id": "${productId}",
+        "target": "customObjs"
+      },
+      {
+        "type": "header",
+        "target": "customProps"
+      }
+    ],
+    "updatePurchaseData": false,
+    "useAdTrackId": false,
+    "useExperimentsClick": false,
+    "useExperimentsVimp": false,
+    "useExperimentsPurchase": false
+  }
+}
