@@ -24,6 +24,9 @@ CATEGORIES = [
     {"name": "이너뷰티_다이어트", "slug": "innerbeauty", "url": "https://gift.kakao.com/ranking/category/8", "subtab": "다이어트·이너뷰티"},
 ]
 
+# 순위와 상관없이 항상 그래프/변동 추적에 포함할 브랜드(부분일치). 경쟁사도 여기 추가 가능.
+TRACK_BRANDS  = ["타이거모닝"]
+
 TOP_N         = 500
 SCROLL_ROUNDS = 45     # 20개씩 페이징 → 500위 확보용
 SCROLL_WAIT   = 800    # ms
@@ -165,6 +168,21 @@ def write_latest(slug, rows, stamp):
         json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
 
 
+def _keep_items(rows, keep_top):
+    """상위 keep_top + 순위 밖이라도 추적 브랜드(TRACK_BRANDS) 상품은 항상 포함"""
+    items, seen = [], set()
+    for r in rows[:keep_top]:
+        items.append({"r": r["rank"], "b": r["brand"], "n": r["name"], "w": r["wish"]})
+        seen.add(r["name"])
+    for r in rows[keep_top:]:
+        if r["name"] in seen:
+            continue
+        if any(b in (r["brand"] or "") for b in TRACK_BRANDS):
+            items.append({"r": r["rank"], "b": r["brand"], "n": r["name"], "w": r["wish"]})
+            seen.add(r["name"])
+    return items
+
+
 def update_history(slug, rows, stamp, keep_top=100, keep_snaps=720):
     """대시보드용 시간대별 히스토리 JSON 누적 (data/history_<slug>.json)"""
     path = os.path.join(DATA_DIR, f"history_{slug}.json")
@@ -174,10 +192,7 @@ def update_history(slug, rows, stamp, keep_top=100, keep_snaps=720):
             hist = json.load(open(path, encoding="utf-8"))
         except Exception:
             hist = []
-    snap = {"t": stamp, "items": [
-        {"r": r["rank"], "b": r["brand"], "n": r["name"], "w": r["wish"]}
-        for r in rows[:keep_top]
-    ]}
+    snap = {"t": stamp, "items": _keep_items(rows, keep_top)}
     hourkey = stamp[:13]                       # "YYYY-MM-DD HH" (시간 단위로 묶음)
     if hist and str(hist[-1].get("t", ""))[:13] == hourkey:
         hist[-1] = snap                        # 같은 시간대면 최신값으로 교체(그래프는 시간당 1점)
@@ -198,10 +213,7 @@ def update_daily(slug, rows, stamp, keep_top=100, keep_days=366):
             hist = json.load(open(path, encoding="utf-8"))
         except Exception:
             hist = []
-    snap = {"t": day, "items": [
-        {"r": r["rank"], "b": r["brand"], "n": r["name"], "w": r["wish"]}
-        for r in rows[:keep_top]
-    ]}
+    snap = {"t": day, "items": _keep_items(rows, keep_top)}
     if hist and hist[-1].get("t") == day:       # 오늘자면 최신값으로 교체
         hist[-1] = snap
     else:
