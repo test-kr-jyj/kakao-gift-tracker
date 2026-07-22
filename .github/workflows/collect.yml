@@ -1,18 +1,21 @@
 name: 카카오 선물하기 랭킹 수집
 
+# 언제 실행할지
 on:
   schedule:
-    - cron: "5 * * * *"
-  workflow_dispatch:
+    - cron: "17,47 * * * *"  # 매시 17분·47분(한산한 시각). 한 번 건너뛰어도 다른 한 번이 커버 → 구멍 최소화.
+  workflow_dispatch:          # 깃허브에서 "Run workflow" 버튼으로 수동 실행 (첫 보정용)
     inputs:
       debug:
         description: "디버그 모드로 실행 (처음 1회 데이터 구조 확인용)"
         type: boolean
         default: false
 
+# 수집한 데이터를 저장소에 다시 커밋하려면 쓰기 권한 필요
 permissions:
   contents: write
 
+# 같은 시각 중복 실행 방지
 concurrency:
   group: collect
   cancel-in-progress: false
