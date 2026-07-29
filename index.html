@@ -35,6 +35,28 @@
 
   .card{background:var(--card);border:1px solid var(--border);border-radius:14px;}
 
+  /* KPI 타일 */
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px;}
+  .kpi{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px;min-width:0;}
+  .kpi .k{font-size:11px;color:var(--muted);font-weight:700;}
+  .kpi .v{font-size:19px;font-weight:800;margin-top:3px;letter-spacing:-0.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .kpi .v small{font-size:12px;color:var(--ink2);font-weight:700;}
+  .kpi .sub{font-size:11px;color:var(--muted);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .kpi.time{background:#fff8ef;border-color:#f3ddb8;}
+  .kpi.time .v{color:#b45309;font-size:15px;}
+  @media(max-width:720px){.kpis{grid-template-columns:repeat(2,1fr);}}
+
+  /* 순위 메달 */
+  .medal{display:inline-flex;align-items:center;justify-content:center;min-width:27px;height:24px;border-radius:7px;
+    font-weight:800;font-size:14px;font-variant-numeric:tabular-nums;padding:0 6px;}
+  .m1{background:#fbe6a2;color:#7a5c00;} .m2{background:#e6e8ec;color:#535b66;} .m3{background:#f3d6bb;color:#834617;}
+
+  /* 검색+버튼 행 */
+  .searchrow{display:flex;gap:8px;align-items:center;margin:0 0 10px;}
+  .searchrow .search{flex:1;margin:0;}
+  .tigerbtn{white-space:nowrap;}
+  .tigerbtn.active{background:var(--hiedge);border-color:var(--hiedge);color:#fff;}
+
   /* 기간 컨트롤 */
   .rangebar{padding:12px 14px;margin-bottom:12px;display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;}
   .chips{display:flex;gap:6px;flex-wrap:wrap;}
@@ -121,6 +143,8 @@
     <button class="tab" data-cat="innerbeauty">이너뷰티 / 다이어트</button>
   </div>
 
+  <div class="kpis" id="kpis"></div>
+
   <div class="card rangebar">
     <div class="chips" id="chips">
       <button class="chip" data-r="1주">1주</button>
@@ -143,9 +167,12 @@
     <div class="chartwrap"><div id="chart"></div><div class="tip" id="tip"></div></div>
   </div>
 
-  <div class="search">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
-    <input id="q" placeholder="상품명·브랜드 검색 (예: 타이거모닝)">
+  <div class="searchrow">
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="q" placeholder="상품명·브랜드 검색">
+    </div>
+    <button class="chip tigerbtn" id="tigerBtn">⭐ 타이거모닝만</button>
   </div>
   <div class="card tablecard"><div id="tablewrap"></div></div>
 
@@ -166,6 +193,10 @@ const store={};
 let curCat="health", rangeMode="1개월", customFrom=null, customTo=null, query="";
 let selected=[]; const selByCat={health:[],innerbeauty:[]};
 const fmt=n=>(n==null?"–":Number(n).toLocaleString());
+const fmtK=n=>{ if(n==null) return "–"; n=Number(n);
+  if(n>=10000) return (n/10000).toFixed(n>=100000?0:1).replace(/\.0$/,"")+"만";
+  return n.toLocaleString(); };
+const shortName=n=>(n&&n.length>18?n.slice(0,18)+"…":(n||""));
 const colorOf=n=>{const i=selected.indexOf(n);return i<0?"#999":PALETTE[i%PALETTE.length];};
 
 function shiftDays(ymd,delta){ const [y,m,d]=ymd.split("-").map(Number);
@@ -220,10 +251,11 @@ function renderTable(){
         const wv=(it.w!=null&&p.w!=null)?it.w-p.w:0;
         wd=wv>0?`<span class="delta up">+${fmt(wv)}</span>`:wv<0?`<span class="delta down">${fmt(wv)}</span>`:'<span class="delta flat">–</span>'; } }
     const mark=picked?`<span class="dot" style="background:${colorOf(it.n)}"></span>`:`<span class="pickbox"></span>`;
+    const rankCell = it.r<=3? `<span class="medal m${it.r}">${it.r}</span>` : `<span class="rank">${it.r}</span>`;
     return `<tr class="clickable ${hi?'brandrow':''} ${picked?'picked':''}" data-name="${encodeURIComponent(it.n)}">
-      <td class="pickcell">${mark}</td><td><span class="rank">${it.r}</span></td><td>${rd}</td>
+      <td class="pickcell">${mark}</td><td>${rankCell}</td><td>${rd}</td>
       <td><div class="pname">${it.n}</div><div class="brand">${it.b||""}</div></td>
-      <td class="num wish">${fmt(it.w)}</td><td class="num">${wd}</td></tr>`;
+      <td class="num wish" title="${fmt(it.w)}">${fmtK(it.w)}</td><td class="num">${wd}</td></tr>`;
   }).join("");
   wrap.innerHTML=`<table><thead><tr><th class="pickcell">비교</th><th style="width:52px">순위</th>
     <th style="width:58px">변동</th><th>브랜드 · 상품명</th><th class="num" style="width:94px">위시 수</th>
@@ -326,7 +358,21 @@ function defaultDates(){
 }
 function updateUpdated(){ const s=store[curCat]; document.getElementById('updated').innerHTML=(s&&s.latest)?`최종 업데이트 <b>${s.latest.t}</b>`:""; }
 
-function refreshAll(){ updateUpdated(); renderSelbar(); renderTable(); renderChart(); }
+function renderKPIs(){
+  const s=store[curCat]; const el=document.getElementById('kpis');
+  if(!s||!s.latest||!s.latest.items){ el.innerHTML=""; return; }
+  const items=s.latest.items;
+  const top1=items.find(x=>x.r===1)||items.slice().sort((a,b)=>a.r-b.r)[0];
+  const tigers=items.filter(x=>(x.b||"").includes(HILITE));
+  const best=tigers.length?Math.min(...tigers.map(x=>x.r)):null;
+  el.innerHTML=`
+    <div class="kpi time"><div class="k">기준 시각</div><div class="v">${s.latest.t}</div><div class="sub">실시간 아님 · 매시간 갱신</div></div>
+    <div class="kpi"><div class="k">현재 1위</div><div class="v">${top1?top1.b:"—"}</div><div class="sub">${top1?shortName(top1.n):""}</div></div>
+    <div class="kpi"><div class="k">⭐ 타이거모닝 최고순위</div><div class="v">${best?best+"위":"순위권 밖"}</div><div class="sub">추적 상품 ${tigers.length}개</div></div>
+    <div class="kpi"><div class="k">수집된 상품</div><div class="v">${items.length}<small> 개</small></div><div class="sub">${CATS[curCat].label}</div></div>`;
+}
+
+function refreshAll(){ updateUpdated(); renderKPIs(); renderSelbar(); renderTable(); renderChart(); }
 
 async function switchCat(cat){
   curCat=cat; query=""; document.getElementById('q').value="";
@@ -344,7 +390,11 @@ function onCustom(){ const f=document.getElementById('fromD').value, t=document.
   if(f&&t){ customFrom=f<=t?f:t; customTo=f<=t?t:f; syncChips(); renderChart(); } }
 document.getElementById('fromD').onchange=onCustom;
 document.getElementById('toD').onchange=onCustom;
-document.getElementById('q').oninput=function(){ query=this.value.trim(); renderTable(); };
+document.getElementById('q').oninput=function(){ query=this.value.trim();
+  document.getElementById('tigerBtn').classList.toggle('active', query===HILITE); renderTable(); };
+document.getElementById('tigerBtn').onclick=function(){
+  const on=!(query===HILITE); query=on?HILITE:""; document.getElementById('q').value=query;
+  this.classList.toggle('active',on); renderTable(); };
 
 syncChips(); switchCat('health');
 </script>
