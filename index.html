@@ -172,25 +172,21 @@ async function load(cat){
   return store[cat];
 }
 
-// 현재 기간에 해당하는 작업 배열
-function working(){
-  const s=store[curCat]; if(!s) return {arr:[], src:"hourly"};
-  const cfg=RANGES[curRange];
-  const base = cfg.src==="daily"? s.daily : s.hourly;
-  const arr = base.slice(-cfg.n);
-  return {arr, src:cfg.src};
-}
+// 기간에 따른 원본 배열(시간단위 또는 일단위) — 슬라이싱 없이 전체
+function srcArr(){ const s=store[curCat]; if(!s) return []; return RANGES[curRange].src==="daily"? s.daily : s.hourly; }
+function srcName(){ return RANGES[curRange].src; }
+function winLen(){ return RANGES[curRange].n; }
 function snapMap(items){ const m=new Map(); (items||[]).forEach(it=>m.set(it.n,it)); return m; }
 function itemsAt(idx){
-  const s=store[curCat]; const w=working(); if(!s) return [];
-  const isNewest = idx>=w.arr.length-1;
-  if(isNewest && w.src==="hourly" && s.latest && s.latest.items){
-    if(!w.arr.length || s.latest.t===w.arr[w.arr.length-1].t) return s.latest.items;
+  const s=store[curCat]; const arr=srcArr(); if(!s) return [];
+  const isNewest = idx>=arr.length-1;
+  if(isNewest && srcName()==="hourly" && s.latest && s.latest.items){
+    if(!arr.length || s.latest.t===arr[arr.length-1].t) return s.latest.items;
   }
-  return w.arr[idx]?.items || (isNewest && s.latest? s.latest.items : []);
+  return arr[idx]?.items || (isNewest && s.latest? s.latest.items : []);
 }
-function count(){ const w=working(); const s=store[curCat]; return w.arr.length || (s&&s.latest?1:0); }
-function stampAt(idx){ const w=working(); const s=store[curCat]; return w.arr[idx]?.t || (s&&s.latest?s.latest.t:"—"); }
+function count(){ const arr=srcArr(); const s=store[curCat]; return arr.length || (s&&s.latest?1:0); }
+function stampAt(idx){ const arr=srcArr(); const s=store[curCat]; return arr[idx]?.t || (s&&s.latest?s.latest.t:"—"); }
 
 function renderTable(){
   const wrap=document.getElementById('tablewrap');
@@ -199,9 +195,9 @@ function renderTable(){
       매시간 자동 수집이 쌓이면 채워집니다. (첫 수집 직후면 잠시 뒤 새로고침)</div>`;
     return;
   }
-  const w=working();
+  const arr=srcArr();
   const cur=itemsAt(curIdx);
-  const prev = curIdx>0 ? snapMap(w.arr[curIdx-1]?.items) : null;
+  const prev = curIdx>0 ? snapMap(arr[curIdx-1]?.items) : null;
   let items=(cur||[]).slice().sort((a,b)=>a.r-b.r);
   if(query){ const q=query.toLowerCase();
     items=items.filter(it=>(it.n||"").toLowerCase().includes(q)||(it.b||"").toLowerCase().includes(q)); }
@@ -263,36 +259,48 @@ function renderSelbar(){
 let chartState=null;
 
 function renderChart(){
-  const w=working(); const hist=w.arr;
+  const arr=srcArr();
   const chart=document.getElementById('chart');
   const sub=document.getElementById('trendSub');
   document.getElementById('tip').style.display="none";
   if(!selected.length){ chart.innerHTML=""; chartState=null; return; }
+  // 선택한 시점(curIdx)을 '끝'으로, 기간 길이만큼 창을 잡는다
+  const isDaily = srcName()==="daily";
+  const L=winLen();
+  const end=Math.min(arr.length-1, Math.max(0,curIdx));
+  const start=Math.max(0, end-L+1);
+  const win=arr.slice(start, end+1);
+  const cut = t => isDaily ? (t||"").slice(0,10) : (t||"").slice(0,16);
+  const rangeLabel = win.length? `${cut(win[0].t)} ~ ${cut(win[win.length-1].t)}` : "";
   const series=selected.map(name=>{
     const map={};
-    hist.forEach((snap,i)=>{ const it=(snap.items||[]).find(x=>x.n===name); if(it) map[i]={r:it.r,w:it.w}; });
+    win.forEach((snap,i)=>{ const it=(snap.items||[]).find(x=>x.n===name); if(it) map[i]={r:it.r,w:it.w}; });
     return {name, color:colorOf(name), map, pts:Object.keys(map).map(k=>({i:+k,...map[k]}))};
   }).filter(s=>s.pts.length);
   const maxLen=Math.max(0,...series.map(s=>s.pts.length));
   if(maxLen<=1){
-    sub.textContent="선택 상품의 현재 순위는 아래 표에 있어요. 추이 선은 이 기간에 2개 이상 시점이 쌓이면 그려집니다.";
+    sub.textContent=`구간: ${rangeLabel} — 이 구간엔 점이 1개뿐이라 선이 안 그려져요. 시점을 옮기거나 데이터가 더 쌓이면 보여요.`;
     chart.innerHTML=""; chartState=null; return;
   }
-  sub.textContent=`그래프에 마우스를 올리면 그 시점의 순위·위시가 보여요 · 기간: ${curRange}`;
-  const W=1000,H=210,padL=44,padR=14,padT=12,padB=28;
+  sub.textContent=`구간: ${rangeLabel}  ·  그래프에 마우스를 올리면 그 시점 상세가 보여요`;
+  const W=1000,H=210,padL=44,padR=16,padT=12,padB=28;
   const allR=series.flatMap(s=>s.pts.map(p=>p.r));
   const lo=Math.max(1,Math.min(...allR)-1), hi=Math.max(...allR)+1;
-  const n=hist.length;
+  const n=win.length;
   const X=i=> padL+(W-padL-padR)*(n<=1?0.5:i/(n-1));
   const Y=r=> padT+(H-padT-padB)*((r-lo)/(hi-lo||1));
   let grid="";
   for(let g=0;g<=4;g++){ const rr=Math.round(lo+(hi-lo)*g/4), yy=Y(rr);
     grid+=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--grid)"/>
       <text x="${padL-8}" y="${yy+4}" text-anchor="end" font-size="11" fill="var(--muted)">${rr}위</text>`; }
-  let xl=""; const step=Math.max(1,Math.floor(n/6));
-  hist.forEach((snap,i)=>{ if(i%step===0||i===n-1){ const t=snap.t||"";
-    const lab = w.src==="daily"? t.slice(5,10) : t.slice(5,16);
-    xl+=`<text x="${X(i)}" y="${H-7}" text-anchor="middle" font-size="10" fill="var(--muted)">${lab}</text>`; }});
+  // x축 라벨 (겹침 방지: 마지막 라벨과 너무 가까운 건 생략, 양끝은 안쪽 정렬)
+  const step=Math.max(1,Math.floor(n/6));
+  const idxs=[]; for(let i=0;i<n;i+=step) idxs.push(i);
+  if(idxs[idxs.length-1]!==n-1){ if(n-1-idxs[idxs.length-1] < step*0.6) idxs.pop(); idxs.push(n-1); }
+  let xl="";
+  idxs.forEach(i=>{ const lab=isDaily? (win[i].t||"").slice(5,10) : (win[i].t||"").slice(5,16);
+    const anchor = i===0?"start" : i===n-1?"end" : "middle";
+    xl+=`<text x="${X(i)}" y="${H-7}" text-anchor="${anchor}" font-size="10" fill="var(--muted)">${lab}</text>`; });
   const paths=series.map(s=>{
     const line=s.pts.map(p=>`${X(p.i)},${Y(p.r)}`).join(" ");
     const dots=s.pts.map(p=>`<circle cx="${X(p.i)}" cy="${Y(p.r)}" r="2.6" fill="#fff" stroke="${s.color}" stroke-width="2"/>`).join("");
@@ -305,7 +313,7 @@ function renderChart(){
     ${paths}
     <rect x="${padL}" y="${padT}" width="${W-padL-padR}" height="${H-padT-padB}" fill="transparent"/>
   </svg>`;
-  chartState={W,H,padL,padR,padT,padB,n,lo,hi,series,stamps:hist.map(s=>s.t),src:w.src,Xfn:X,Yfn:Y};
+  chartState={W,H,padL,padR,padT,padB,n,lo,hi,series,stamps:win.map(s=>s.t),src:srcName(),Xfn:X,Yfn:Y};
   attachHover();
 }
 
