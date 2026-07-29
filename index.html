@@ -8,424 +8,345 @@
   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
   :root{
-    --surface-1:#fcfcfb; --page:#f9f9f7;
-    --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
-    --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,0.10);
-    --series-1:#2a78d6; --up:#d03b3b; --down:#2a78d6; --good:#0ca30c;
-    --brandhi:#fff4e8; --brandbd:#eb6834;
+    --bg:#f4f5f3; --card:#ffffff;
+    --ink:#111312; --ink2:#5b5f5b; --muted:#9a9d98;
+    --line:#eceded; --line2:#e2e4e2; --border:rgba(17,19,18,0.08);
+    --brand:#111312;
+    --series-1:#2a78d6; --up:#d64545; --down:#2a78d6; --good:#0ca35a;
+    --hi:#fff6ec; --hiedge:#f08a3c;
+    --chipbg:#f0f1ef;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--page);color:var(--ink);
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);
     font-family:"Pretendard Variable",Pretendard,system-ui,-apple-system,"Malgun Gothic",sans-serif;
-    -webkit-font-smoothing:antialiased;}
-  .wrap{max-width:1080px;margin:0 auto;padding:20px 20px 60px;}
-  header h1{font-size:20px;margin:0 0 4px;font-weight:700;}
-  header .sub{color:var(--ink2);font-size:13px;}
-  .updated{color:var(--muted);font-size:12px;margin-top:4px;}
-  .tabs{display:flex;gap:8px;margin:18px 0 4px;}
-  .tab{padding:9px 16px;border:1px solid var(--border);background:var(--surface-1);
-    border-radius:10px;font-size:14px;font-weight:600;color:var(--ink2);cursor:pointer;}
-  .tab.active{background:var(--ink);color:#fff;border-color:var(--ink);}
-  .controls{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;
-    background:var(--surface-1);border:1px solid var(--border);border-radius:12px;
-    padding:12px 16px;margin:12px 0 12px;}
-  .controls label{font-size:13px;color:var(--ink2);font-weight:600;}
-  .controls input[type=range]{flex:1;min-width:160px;accent-color:var(--series-1);}
-  .controls input:disabled{opacity:.4;}
-  .timepill{font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;
-    background:var(--page);border:1px solid var(--border);border-radius:8px;padding:5px 12px;}
-  select{padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-family:inherit;
-    font-size:13px;font-weight:600;color:var(--ink);background:var(--surface-1);cursor:pointer;}
+    -webkit-font-smoothing:antialiased;font-size:14px;line-height:1.45;}
+  .wrap{max-width:1060px;margin:0 auto;padding:22px 18px 64px;}
 
-  /* 상단 고정 그래프 패널 */
-  .chartpanel{position:sticky;top:0;z-index:20;background:var(--surface-1);
-    border:1px solid var(--border);border-radius:12px;padding:12px 16px 6px;
-    margin-bottom:14px;box-shadow:0 6px 16px rgba(0,0,0,0.06);}
-  .chartpanel h3{margin:0;font-size:14px;font-weight:700;display:inline-block;}
-  .chartpanel .psub{color:var(--ink2);font-size:12px;margin:2px 0 8px;}
-  .selbar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px;align-items:center;}
-  .chip{display:inline-flex;align-items:center;gap:6px;background:var(--page);border:1px solid var(--border);
-    border-radius:999px;padding:3px 9px;font-size:12px;font-weight:600;max-width:260px;}
-  .chip .x{cursor:pointer;color:var(--muted);font-weight:800;}
-  .chip .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
+  header h1{font-size:19px;font-weight:800;margin:0;letter-spacing:-0.01em;}
+  header .sub{color:var(--ink2);font-size:12.5px;margin-top:3px;}
+  .updated{color:var(--muted);font-size:12px;white-space:nowrap;}
+  .updated b{color:var(--ink2);font-weight:700;}
+
+  .tabs{display:flex;gap:6px;background:var(--chipbg);padding:4px;border-radius:12px;width:max-content;margin-bottom:14px;}
+  .tab{padding:8px 16px;border-radius:9px;font-size:13.5px;font-weight:700;color:var(--ink2);cursor:pointer;border:none;background:transparent;}
+  .tab.active{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,0.08);}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;}
+
+  /* 기간 컨트롤 */
+  .rangebar{padding:12px 14px;margin-bottom:12px;display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;}
+  .chip{padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;
+    border:1px solid var(--line2);background:var(--card);color:var(--ink2);}
+  .chip.active{background:var(--ink);border-color:var(--ink);color:#fff;}
+  .divider{width:1px;height:22px;background:var(--line2);}
+  .daterange{display:flex;align-items:center;gap:7px;color:var(--ink2);font-size:12.5px;font-weight:600;}
+  .daterange input[type=date]{font-family:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--line2);
+    border-radius:8px;color:var(--ink);background:var(--card);}
+  .daterange .tilde{color:var(--muted);}
+
+  /* 그래프 (고정) */
+  .chartpanel{position:sticky;top:8px;z-index:20;padding:14px 16px 8px;margin-bottom:14px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.07);}
+  .chartpanel .ptitle{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+  .chartpanel h3{margin:0;font-size:14px;font-weight:800;}
+  .chartpanel .range{color:var(--ink2);font-size:12px;font-weight:700;}
+  .chartpanel .psub{color:var(--muted);font-size:11.5px;margin:2px 0 8px;}
+  .selbar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;align-items:center;}
+  .selchip{display:inline-flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--border);
+    border-radius:999px;padding:4px 10px;font-size:12px;font-weight:600;max-width:250px;}
+  .selchip .x{cursor:pointer;color:var(--muted);font-weight:800;padding:0 2px;}
+  .selchip .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   .clearbtn{font-size:12px;color:var(--series-1);cursor:pointer;font-weight:700;border:none;background:none;}
   .hint{color:var(--muted);font-size:12px;}
-  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:2px;vertical-align:middle;}
-  #chart svg{display:block}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle;flex:none;}
   .chartwrap{position:relative;}
-  .cross{stroke:var(--axis);stroke-dasharray:3 3;}
-  .tip{position:fixed;pointer-events:none;z-index:50;background:var(--surface-1);
-    border:1px solid var(--border);border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.14);
-    padding:8px 10px;font-size:12px;line-height:1.55;display:none;max-width:300px;}
-  .tip .th{font-weight:700;margin-bottom:4px;font-variant-numeric:tabular-nums;color:var(--ink2);}
+  #chart svg{display:block}
+  .cross{stroke:var(--line2);stroke-dasharray:3 3;}
+  .tip{position:fixed;pointer-events:none;z-index:60;background:var(--card);border:1px solid var(--border);
+    border-radius:9px;box-shadow:0 6px 20px rgba(0,0,0,0.16);padding:9px 11px;font-size:12px;line-height:1.55;display:none;max-width:300px;}
+  .tip .th{font-weight:800;margin-bottom:5px;font-variant-numeric:tabular-nums;color:var(--ink2);}
   .tip .row{display:flex;align-items:center;gap:6px;white-space:nowrap;}
   .tip .nm{overflow:hidden;text-overflow:ellipsis;max-width:150px;}
   .tip b{font-variant-numeric:tabular-nums;}
-  .collapsed #chart{display:none;}
-  .collapsed .chartwrap{display:none;}
+  .collapsed #chart,.collapsed .chartwrap{display:none;}
   .collapsed .psub{display:none;}
 
-  .search{margin:0 0 10px;}
-  .search input{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:10px;
-    font-size:14px;font-family:inherit;}
-  table{width:100%;border-collapse:collapse;background:var(--surface-1);
-    border:1px solid var(--border);border-radius:12px;overflow:hidden;font-size:14px;}
-  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--grid);}
-  th{font-size:12px;color:var(--muted);font-weight:700;background:#fbfbf9;}
+  /* 검색 */
+  .search{position:relative;margin:0 0 10px;}
+  .search input{width:100%;padding:11px 13px 11px 38px;border:1px solid var(--border);border-radius:11px;
+    font-size:14px;font-family:inherit;background:var(--card);}
+  .search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);opacity:.45;}
+
+  /* 표 */
+  .tablecard{overflow:hidden;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  thead th{position:sticky;top:0;background:var(--card);font-size:11.5px;color:var(--muted);font-weight:700;
+    text-align:left;padding:11px 12px;border-bottom:1px solid var(--line2);}
+  td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:middle;}
+  tbody tr:last-child td{border-bottom:none;}
   td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;}
-  tr:last-child td{border-bottom:none;}
-  tr.brandrow{background:var(--brandhi);}
-  tr.brandrow td:first-child{box-shadow:inset 3px 0 var(--brandbd);}
+  tr.brandrow{background:var(--hi);}
+  tr.brandrow td:first-child{box-shadow:inset 3px 0 var(--hiedge);}
   .rank{font-weight:800;font-variant-numeric:tabular-nums;font-size:15px;}
-  .delta{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;}
-  .up{color:var(--up);} .down{color:var(--down);} .flat{color:var(--muted);} .new{color:var(--good);font-weight:800;}
-  .brand{color:var(--ink2);font-size:12px;}
-  .pname{font-weight:600;line-height:1.35;}
-  .wish{font-weight:700;}
+  .delta{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;}
+  .up{color:var(--up);} .down{color:var(--down);} .flat{color:var(--muted);} .new{color:var(--good);}
+  .brand{color:var(--ink2);font-size:11.5px;margin-top:1px;}
+  .pname{font-weight:700;line-height:1.3;}
+  .wish{font-weight:800;}
   tr.clickable{cursor:pointer;}
-  tr.clickable:hover{background:#f3f6fb;}
-  tr.brandrow.clickable:hover{background:#ffedd9;}
-  .pickcell{width:34px;text-align:center;}
-  .pickbox{width:16px;height:16px;border:1.5px solid var(--axis);border-radius:5px;display:inline-block;vertical-align:middle;}
+  tr.clickable:hover{background:#f6f8fb;}
+  tr.brandrow.clickable:hover{background:#ffefdc;}
+  .pickcell{width:30px;text-align:center;}
+  .pickbox{width:15px;height:15px;border:1.5px solid var(--line2);border-radius:5px;display:inline-block;vertical-align:middle;}
   tr.picked .pickbox{display:none;}
-  .empty{padding:40px;text-align:center;color:var(--muted);font-size:14px;line-height:1.7;}
-  footer{margin-top:24px;color:var(--muted);font-size:12px;line-height:1.6;}
+  .empty{padding:44px;text-align:center;color:var(--muted);font-size:13.5px;line-height:1.7;}
+  footer{margin-top:18px;color:var(--muted);font-size:11.5px;text-align:center;}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>🎁 카카오 선물하기 랭킹 트래커</h1>
-    <div class="sub">건강 전체 · 이너뷰티/다이어트 · 매시간 자동 수집</div>
+    <div>
+      <h1>🎁 카카오 선물하기 랭킹 트래커</h1>
+      <div class="sub">건강 전체 · 이너뷰티/다이어트 · 매시간 자동 수집</div>
+    </div>
     <div class="updated" id="updated"></div>
   </header>
 
   <div class="tabs" id="tabs">
-    <div class="tab active" data-cat="health">건강 전체</div>
-    <div class="tab" data-cat="innerbeauty">이너뷰티 / 다이어트</div>
+    <button class="tab active" data-cat="health">건강 전체</button>
+    <button class="tab" data-cat="innerbeauty">이너뷰티 / 다이어트</button>
   </div>
 
-  <div class="controls">
-    <label>기간</label>
-    <select id="rangeSel">
-      <option value="1일">1일</option>
-      <option value="1주">1주</option>
-      <option value="1개월" selected>1개월</option>
-      <option value="3개월">3개월</option>
-      <option value="6개월">6개월</option>
-      <option value="1년">1년</option>
-    </select>
-    <label>시작일</label>
-    <select id="dateSel"></select>
-    <label>← 과거로</label>
-    <input type="range" id="hour" min="0" max="0" value="0" step="1">
-    <span class="timepill" id="hourlabel">—</span>
+  <div class="card rangebar">
+    <div class="chips" id="chips">
+      <button class="chip" data-r="1주">1주</button>
+      <button class="chip active" data-r="1개월">1개월</button>
+      <button class="chip" data-r="3개월">3개월</button>
+      <button class="chip" data-r="1년">1년</button>
+      <button class="chip" data-r="전체">전체</button>
+    </div>
+    <div class="divider"></div>
+    <div class="daterange">
+      직접 지정
+      <input type="date" id="fromD"><span class="tilde">~</span><input type="date" id="toD">
+    </div>
   </div>
 
-  <!-- 상단 고정 그래프 -->
-  <div class="chartpanel collapsed" id="chartpanel">
-    <h3>순위 추이 비교</h3>
+  <div class="card chartpanel collapsed" id="chartpanel">
+    <div class="ptitle"><h3>순위 추이 비교</h3><span class="range" id="rangeLabel"></span></div>
     <div class="psub" id="trendSub"></div>
     <div class="selbar" id="selbar"></div>
     <div class="chartwrap"><div id="chart"></div><div class="tip" id="tip"></div></div>
   </div>
 
-  <div class="search"><input id="q" placeholder="상품명·브랜드 검색 (예: 타이거모닝)"></div>
-  <div id="tablewrap"></div>
+  <div class="search">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+    <input id="q" placeholder="상품명·브랜드 검색 (예: 타이거모닝)">
+  </div>
+  <div class="card tablecard"><div id="tablewrap"></div></div>
 
-  <footer>데이터 수집 주기: 매시간 · 개인 참고용 · 최근 30일은 시간 단위, 그 이전은 하루 단위로 조회</footer>
+  <footer>개인 참고용 · 순위표는 항상 현재 기준 · 그래프는 선택한 기간의 흐름</footer>
 </div>
 
 <script>
 const CATS = {
-  health:      {latest:"data/latest_health.json",  hourly:"data/history_health.json",  daily:"data/daily_health.json",  label:"건강 전체"},
+  health:      {latest:"data/latest_health.json",     hourly:"data/history_health.json",     daily:"data/daily_health.json",     label:"건강 전체"},
   innerbeauty: {latest:"data/latest_innerbeauty.json", hourly:"data/history_innerbeauty.json", daily:"data/daily_innerbeauty.json", label:"이너뷰티/다이어트"},
 };
-const HILITE = "타이거모닝";
-const PALETTE = ["#2a78d6","#eb6834","#1baf7a","#eda100","#e87ba4","#4a3aa7","#008300","#e34948"];
-const MAX_SEL = 8;
-const RANGES = {
-  "1일":   {src:"hourly", n:24},
-  "1주":   {src:"hourly", n:168},
-  "1개월": {src:"hourly", n:100000},
-  "3개월": {src:"daily",  n:93},
-  "6개월": {src:"daily",  n:186},
-  "1년":   {src:"daily",  n:366},
-};
-const store = {};
-let curCat="health", curRange="1개월", curIdx=0, query="";
-let selected=[];
-const selByCat={health:[], innerbeauty:[]};
-const fmt = n => (n==null? "–" : Number(n).toLocaleString());
-const colorOf = name => { const i=selected.indexOf(name); return i<0?"#999":PALETTE[i%PALETTE.length]; };
+const HILITE="타이거모닝";
+const PALETTE=["#2a78d6","#eb6834","#1baf7a","#eda100","#e87ba4","#4a3aa7","#0ca35a","#e34948"];
+const MAX_SEL=8;
+const PRESETS={ "1주":{days:7,src:"hourly"}, "1개월":{days:30,src:"hourly"},
+                "3개월":{days:90,src:"daily"}, "1년":{days:365,src:"daily"}, "전체":{days:99999,src:"daily"} };
+const store={};
+let curCat="health", rangeMode="1개월", customFrom=null, customTo=null, query="";
+let selected=[]; const selByCat={health:[],innerbeauty:[]};
+const fmt=n=>(n==null?"–":Number(n).toLocaleString());
+const colorOf=n=>{const i=selected.indexOf(n);return i<0?"#999":PALETTE[i%PALETTE.length];};
 
-async function fetchJson(url){
-  try{ const r=await fetch(url+"?_="+Date.now()); if(!r.ok) throw 0; return await r.json(); }
-  catch(e){ return null; }
-}
+function shiftDays(ymd,delta){ const [y,m,d]=ymd.split("-").map(Number);
+  const dt=new Date(Date.UTC(y,m-1,d)); dt.setUTCDate(dt.getUTCDate()+delta); return dt.toISOString().slice(0,10); }
+function daysBetween(a,b){ return Math.round((new Date(b+"T00:00:00Z")-new Date(a+"T00:00:00Z"))/86400000); }
+
+async function fetchJson(u){ try{const r=await fetch(u+"?_="+Date.now()); if(!r.ok)throw 0; return await r.json();}catch(e){return null;} }
 async function load(cat){
   if(store[cat]) return store[cat];
   const latest=await fetchJson(CATS[cat].latest);
   let hourly=await fetchJson(CATS[cat].hourly); if(!Array.isArray(hourly)) hourly=[];
   let daily =await fetchJson(CATS[cat].daily);  if(!Array.isArray(daily))  daily=[];
-  store[cat]={latest, hourly, daily};
+  store[cat]={latest,hourly,daily};
   return store[cat];
 }
 
-// 기간에 따른 원본 배열(시간단위 또는 일단위) — 슬라이싱 없이 전체
-function srcArr(){ const s=store[curCat]; if(!s) return []; return RANGES[curRange].src==="daily"? s.daily : s.hourly; }
-function srcName(){ return RANGES[curRange].src; }
-function winLen(){ return RANGES[curRange].n; }
-function snapMap(items){ const m=new Map(); (items||[]).forEach(it=>m.set(it.n,it)); return m; }
-function itemsAt(idx){
-  const s=store[curCat]; const arr=srcArr(); if(!s) return [];
-  const isNewest = idx>=arr.length-1;
-  if(isNewest && srcName()==="hourly" && s.latest && s.latest.items){
-    if(!arr.length || s.latest.t===arr[arr.length-1].t) return s.latest.items;
+// 현재 선택된 기간의 그래프용 점들
+function windowPoints(){
+  const s=store[curCat]; if(!s) return {pts:[],daily:false,from:"",to:""};
+  if(customFrom && customTo){
+    const span=Math.max(1,daysBetween(customFrom,customTo));
+    const daily=span>10;
+    const base=daily?s.daily:s.hourly;
+    const pts=base.filter(p=>p.t.slice(0,10)>=customFrom && p.t.slice(0,10)<=customTo);
+    return {pts,daily,from:customFrom,to:customTo};
   }
-  return arr[idx]?.items || (isNewest && s.latest? s.latest.items : []);
+  const cfg=PRESETS[rangeMode]; const daily=cfg.src==="daily"; const base=daily?s.daily:s.hourly;
+  if(!base.length) return {pts:[],daily,from:"",to:""};
+  const lastDay=base[base.length-1].t.slice(0,10);
+  const cutoff=cfg.days>9000? "0000-00-00" : shiftDays(lastDay,-cfg.days);
+  const pts=base.filter(p=>p.t.slice(0,10)>=cutoff);
+  return {pts,daily,from:pts[0]?.t||"",to:pts[pts.length-1]?.t||""};
 }
-function count(){ const arr=srcArr(); const s=store[curCat]; return arr.length || (s&&s.latest?1:0); }
-function stampAt(idx){ const arr=srcArr(); const s=store[curCat]; return arr[idx]?.t || (s&&s.latest?s.latest.t:"—"); }
 
+function snapMap(items){const m=new Map();(items||[]).forEach(it=>m.set(it.n,it));return m;}
+
+/* ---------- 표: 항상 현재(최신) 순위 ---------- */
 function renderTable(){
-  const wrap=document.getElementById('tablewrap');
-  if(count()===0){
-    wrap.innerHTML=`<div class="empty">아직 이 기간에 수집된 데이터가 없어요.<br>
-      매시간 자동 수집이 쌓이면 채워집니다. (첫 수집 직후면 잠시 뒤 새로고침)</div>`;
-    return;
-  }
-  const arr=srcArr();
-  const ni=arr.length-1;                 // 표는 항상 '현재(최신)' 순위 고정
-  const cur=itemsAt(ni);
-  const prev = ni>0 ? snapMap(arr[ni-1]?.items) : null;
-  let items=(cur||[]).slice().sort((a,b)=>a.r-b.r);
-  if(query){ const q=query.toLowerCase();
-    items=items.filter(it=>(it.n||"").toLowerCase().includes(q)||(it.b||"").toLowerCase().includes(q)); }
+  const s=store[curCat]; const wrap=document.getElementById('tablewrap');
+  const cur=(s&&s.latest&&s.latest.items)||[];
+  if(!cur.length){ wrap.innerHTML=`<div class="empty">아직 수집된 데이터가 없어요.<br>매시간 자동 수집이 쌓이면 채워집니다.</div>`; return; }
+  const hp=(s.hourly||[]); const prev=hp.length>=2? snapMap(hp[hp.length-2].items):null;
+  let items=cur.slice().sort((a,b)=>a.r-b.r);
+  if(query){ const q=query.toLowerCase(); items=items.filter(it=>(it.n||"").toLowerCase().includes(q)||(it.b||"").toLowerCase().includes(q)); }
   const rows=items.map(it=>{
-    const hi=(it.b||"").includes(HILITE);
-    const picked=selected.includes(it.n);
+    const hi=(it.b||"").includes(HILITE); const picked=selected.includes(it.n);
     let rd='<span class="delta flat">–</span>', wd='<span class="delta flat">–</span>';
-    if(prev){
-      const p=prev.get(it.n);
+    if(prev){ const p=prev.get(it.n);
       if(!p){ rd='<span class="delta new">NEW</span>'; }
-      else{
-        const d=p.r-it.r;
+      else{ const d=p.r-it.r;
         rd=d>0?`<span class="delta up">▲${d}</span>`:d<0?`<span class="delta down">▼${-d}</span>`:'<span class="delta flat">–</span>';
         const wv=(it.w!=null&&p.w!=null)?it.w-p.w:0;
-        wd=wv>0?`<span class="delta up">+${fmt(wv)}</span>`:wv<0?`<span class="delta down">${fmt(wv)}</span>`:'<span class="delta flat">–</span>';
-      }
-    }
+        wd=wv>0?`<span class="delta up">+${fmt(wv)}</span>`:wv<0?`<span class="delta down">${fmt(wv)}</span>`:'<span class="delta flat">–</span>'; } }
     const mark=picked?`<span class="dot" style="background:${colorOf(it.n)}"></span>`:`<span class="pickbox"></span>`;
     return `<tr class="clickable ${hi?'brandrow':''} ${picked?'picked':''}" data-name="${encodeURIComponent(it.n)}">
-      <td class="pickcell">${mark}</td>
-      <td><span class="rank">${it.r}</span></td>
-      <td>${rd}</td>
+      <td class="pickcell">${mark}</td><td><span class="rank">${it.r}</span></td><td>${rd}</td>
       <td><div class="pname">${it.n}</div><div class="brand">${it.b||""}</div></td>
-      <td class="num wish">${fmt(it.w)}</td>
-      <td class="num">${wd}</td></tr>`;
+      <td class="num wish">${fmt(it.w)}</td><td class="num">${wd}</td></tr>`;
   }).join("");
-  wrap.innerHTML=`<table><thead><tr>
-    <th class="pickcell">비교</th><th style="width:54px">순위</th><th style="width:60px">변동</th>
-    <th>브랜드 · 상품명</th><th class="num" style="width:98px">위시 수</th>
-    <th class="num" style="width:90px">위시 변동</th></tr></thead><tbody>${rows}</tbody></table>`;
-  wrap.querySelectorAll('tr').forEach(tr=> tr.onclick=()=>toggleSelect(decodeURIComponent(tr.dataset.name)));
+  wrap.innerHTML=`<table><thead><tr><th class="pickcell">비교</th><th style="width:52px">순위</th>
+    <th style="width:58px">변동</th><th>브랜드 · 상품명</th><th class="num" style="width:94px">위시 수</th>
+    <th class="num" style="width:86px">위시 변동</th></tr></thead><tbody>${rows}</tbody></table>`;
+  wrap.querySelectorAll('tbody tr').forEach(tr=>tr.onclick=()=>toggleSelect(decodeURIComponent(tr.dataset.name)));
 }
 
 function toggleSelect(name){
   const i=selected.indexOf(name);
   if(i>=0) selected.splice(i,1);
   else{ if(selected.length>=MAX_SEL){ alert(`한 번에 최대 ${MAX_SEL}개까지 비교할 수 있어요.`); return; } selected.push(name); }
-  selByCat[curCat]=selected.slice();
-  renderSelbar(); renderTable(); renderChart();
+  selByCat[curCat]=selected.slice(); renderSelbar(); renderTable(); renderChart();
 }
 function renderSelbar(){
-  const bar=document.getElementById('selbar');
-  const panel=document.getElementById('chartpanel');
-  if(!selected.length){
-    bar.innerHTML=`<span class="hint">표에서 상품을 클릭하면 이 그래프에 색깔별로 추가돼요 (여러 개 동시 비교 · 최대 ${MAX_SEL}개).</span>`;
-    panel.classList.add('collapsed'); return;
-  }
+  const bar=document.getElementById('selbar'); const panel=document.getElementById('chartpanel');
+  if(!selected.length){ bar.innerHTML=`<span class="hint">아래 표에서 상품을 클릭하면 이 그래프에 색깔별로 추가돼요 (최대 ${MAX_SEL}개 비교).</span>`;
+    panel.classList.add('collapsed'); return; }
   panel.classList.remove('collapsed');
-  const chips=selected.map(n=>{
-    const short=n.length>24?n.slice(0,24)+"…":n;
-    return `<span class="chip"><span class="dot" style="background:${colorOf(n)}"></span>
-      <span class="nm">${short}</span><span class="x" data-x="${encodeURIComponent(n)}">×</span></span>`;
-  }).join("");
-  bar.innerHTML=chips+`<button class="clearbtn" id="clearSel">전체 지우기</button>`;
+  bar.innerHTML=selected.map(n=>{ const short=n.length>24?n.slice(0,24)+"…":n;
+    return `<span class="selchip"><span class="dot" style="background:${colorOf(n)}"></span><span class="nm">${short}</span><span class="x" data-x="${encodeURIComponent(n)}">×</span></span>`;
+  }).join("")+`<button class="clearbtn" id="clearSel">전체 지우기</button>`;
   bar.querySelectorAll('.x').forEach(x=>x.onclick=()=>toggleSelect(decodeURIComponent(x.dataset.x)));
-  document.getElementById('clearSel').onclick=()=>{ selected=[]; selByCat[curCat]=[]; renderSelbar(); renderTable(); renderChart(); };
+  document.getElementById('clearSel').onclick=()=>{selected=[];selByCat[curCat]=[];renderSelbar();renderTable();renderChart();};
 }
 
+/* ---------- 그래프 ---------- */
 let chartState=null;
-
 function renderChart(){
-  const arr=srcArr();
-  const chart=document.getElementById('chart');
-  const sub=document.getElementById('trendSub');
-  document.getElementById('tip').style.display="none";
+  const chart=document.getElementById('chart'); const sub=document.getElementById('trendSub');
+  const rlab=document.getElementById('rangeLabel'); const tip=document.getElementById('tip'); tip.style.display="none";
+  const {pts,daily,from,to}=windowPoints();
+  const cut=t=>daily?(t||"").slice(0,10):(t||"").slice(0,16);
+  rlab.textContent = pts.length? `${cut(from)} ~ ${cut(to)}` : "";
   if(!selected.length){ chart.innerHTML=""; chartState=null; return; }
-  // 선택한 시점(curIdx)을 '끝'으로, 기간 길이만큼 창을 잡는다
-  const isDaily = srcName()==="daily";
-  const end=arr.length-1;                            // 오른쪽 끝 = 항상 현재
-  const start=Math.max(0, Math.min(curIdx, end-1));  // 슬라이더/시작일 = 과거 시작점
-  const win=arr.slice(start, end+1);
-  const cut = t => isDaily ? (t||"").slice(0,10) : (t||"").slice(0,16);
-  const rangeLabel = win.length? `${cut(win[0].t)} ~ ${cut(win[win.length-1].t)}` : "";
-  const series=selected.map(name=>{
-    const map={};
-    win.forEach((snap,i)=>{ const it=(snap.items||[]).find(x=>x.n===name); if(it) map[i]={r:it.r,w:it.w}; });
-    return {name, color:colorOf(name), map, pts:Object.keys(map).map(k=>({i:+k,...map[k]}))};
+  const series=selected.map(name=>{ const map={};
+    pts.forEach((snap,i)=>{const it=(snap.items||[]).find(x=>x.n===name); if(it) map[i]={r:it.r,w:it.w};});
+    return {name,color:colorOf(name),map,pts:Object.keys(map).map(k=>({i:+k,...map[k]}))};
   }).filter(s=>s.pts.length);
   const maxLen=Math.max(0,...series.map(s=>s.pts.length));
-  if(maxLen<=1){
-    sub.textContent=`구간: ${rangeLabel} — 이 구간엔 점이 1개뿐이라 선이 안 그려져요. 시점을 옮기거나 데이터가 더 쌓이면 보여요.`;
-    chart.innerHTML=""; chartState=null; return;
-  }
-  sub.textContent=`구간: ${rangeLabel}  ·  그래프에 마우스를 올리면 그 시점 상세가 보여요`;
-  const W=1000,H=210,padL=44,padR=16,padT=12,padB=28;
+  if(maxLen<=1){ sub.textContent="이 기간엔 점이 1개뿐이라 선이 안 그려져요. 기간을 넓히면 보여요."; chart.innerHTML=""; chartState=null; return; }
+  sub.textContent="그래프에 마우스를 올리면 그 시점의 순위·위시가 보여요";
+  const W=1000,H=214,padL=42,padR=16,padT=12,padB=28;
   const allR=series.flatMap(s=>s.pts.map(p=>p.r));
-  const lo=Math.max(1,Math.min(...allR)-1), hi=Math.max(...allR)+1;
-  const n=win.length;
-  const X=i=> padL+(W-padL-padR)*(n<=1?0.5:i/(n-1));
-  const Y=r=> padT+(H-padT-padB)*((r-lo)/(hi-lo||1));
+  const lo=Math.max(1,Math.min(...allR)-1), hi=Math.max(...allR)+1, n=pts.length;
+  const X=i=>padL+(W-padL-padR)*(n<=1?0.5:i/(n-1));
+  const Y=r=>padT+(H-padT-padB)*((r-lo)/(hi-lo||1));
   let grid="";
   for(let g=0;g<=4;g++){ const rr=Math.round(lo+(hi-lo)*g/4), yy=Y(rr);
-    grid+=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--grid)"/>
+    grid+=`<line x1="${padL}" y1="${yy}" x2="${W-padR}" y2="${yy}" stroke="var(--line)"/>
       <text x="${padL-8}" y="${yy+4}" text-anchor="end" font-size="11" fill="var(--muted)">${rr}위</text>`; }
-  // x축 라벨 (겹침 방지: 마지막 라벨과 너무 가까운 건 생략, 양끝은 안쪽 정렬)
-  const step=Math.max(1,Math.floor(n/6));
-  const idxs=[]; for(let i=0;i<n;i+=step) idxs.push(i);
-  if(idxs[idxs.length-1]!==n-1){ if(n-1-idxs[idxs.length-1] < step*0.6) idxs.pop(); idxs.push(n-1); }
-  let xl="";
-  idxs.forEach(i=>{ const lab=isDaily? (win[i].t||"").slice(5,10) : (win[i].t||"").slice(5,16);
-    const anchor = i===0?"start" : i===n-1?"end" : "middle";
-    xl+=`<text x="${X(i)}" y="${H-7}" text-anchor="${anchor}" font-size="10" fill="var(--muted)">${lab}</text>`; });
+  const step=Math.max(1,Math.floor(n/6)); const idxs=[];
+  for(let i=0;i<n;i+=step) idxs.push(i);
+  if(idxs[idxs.length-1]!==n-1){ if(n-1-idxs[idxs.length-1]<step*0.6) idxs.pop(); idxs.push(n-1); }
+  let xl=""; idxs.forEach(i=>{ const lab=daily?(pts[i].t||"").slice(5,10):(pts[i].t||"").slice(5,16);
+    const a=i===0?"start":i===n-1?"end":"middle";
+    xl+=`<text x="${X(i)}" y="${H-7}" text-anchor="${a}" font-size="10" fill="var(--muted)">${lab}</text>`; });
   const paths=series.map(s=>{
     const line=s.pts.map(p=>`${X(p.i)},${Y(p.r)}`).join(" ");
-    const dots=s.pts.map(p=>`<circle cx="${X(p.i)}" cy="${Y(p.r)}" r="2.6" fill="#fff" stroke="${s.color}" stroke-width="2"/>`).join("");
+    const dots=s.pts.length<=60? s.pts.map(p=>`<circle cx="${X(p.i)}" cy="${Y(p.r)}" r="2.4" fill="#fff" stroke="${s.color}" stroke-width="2"/>`).join(""):"";
     return `<polyline points="${line}" fill="none" stroke="${s.color}" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>${dots}`;
   }).join("");
   chart.innerHTML=`<svg id="csvg" viewBox="0 0 ${W} ${H}" width="100%" preserveAspectRatio="xMidYMid meet">
-    ${grid}${xl}
-    <line id="crossline" class="cross" x1="0" y1="${padT}" x2="0" y2="${H-padB}" style="display:none"/>
-    <g id="crossdots"></g>
-    ${paths}
-    <rect x="${padL}" y="${padT}" width="${W-padL-padR}" height="${H-padT-padB}" fill="transparent"/>
-  </svg>`;
-  chartState={W,H,padL,padR,padT,padB,n,lo,hi,series,stamps:win.map(s=>s.t),src:srcName(),Xfn:X,Yfn:Y};
-  attachHover();
+    ${grid}${xl}<line id="crossline" class="cross" x1="0" y1="${padT}" x2="0" y2="${H-padB}" style="display:none"/>
+    <g id="crossdots"></g>${paths}
+    <rect x="${padL}" y="${padT}" width="${W-padL-padR}" height="${H-padT-padB}" fill="transparent"/></svg>`;
+  chartState={W,padL,padR,n,series,stamps:pts.map(s=>s.t),Xfn:X,Yfn:Y}; attachHover();
 }
-
 function attachHover(){
   const svg=document.getElementById('csvg'); if(!svg||!chartState) return;
-  const tip=document.getElementById('tip');
-  const {W,padL,padR,n,Xfn,Yfn,series,stamps}=chartState;
-  function idxFromEvent(e){
-    const rect=svg.getBoundingClientRect();
-    const cx=(e.touches? e.touches[0].clientX : e.clientX);
-    const fx=(cx-rect.left)/rect.width;               // 0..1
-    const vbx=fx*W;
-    let i=Math.round((vbx-padL)/((W-padL-padR)/(n-1||1)));
-    return Math.max(0, Math.min(n-1, i));
-  }
-  function show(e){
-    const i=idxFromEvent(e);
-    const cl=document.getElementById('crossline');
-    const cd=document.getElementById('crossdots');
-    const xpix=Xfn(i);
-    cl.setAttribute('x1',xpix); cl.setAttribute('x2',xpix); cl.style.display="";
-    // 각 시리즈의 해당 지점 강조점 + 툴팁 내용
-    let dots="", rows="";
-    series.forEach(s=>{
-      const cur=s.map[i]; if(!cur) return;
-      dots+=`<circle cx="${xpix}" cy="${Yfn(cur.r)}" r="4.5" fill="${s.color}" stroke="#fff" stroke-width="1.5"/>`;
-      // 위시 변동: 이전 지점 대비
-      let dw="";
-      for(let j=i-1;j>=0;j--){ if(s.map[j]){ const d=cur.w-s.map[j].w;
-        dw = d>0?` <span style="color:var(--up)">+${fmt(d)}</span>`:d<0?` <span style="color:var(--down)">${fmt(d)}</span>`:""; break; } }
+  const tip=document.getElementById('tip'); const {W,padL,padR,n,Xfn,Yfn,series,stamps}=chartState;
+  function idxAt(e){ const rect=svg.getBoundingClientRect(); const cx=e.touches?e.touches[0].clientX:e.clientX;
+    const vbx=(cx-rect.left)/rect.width*W; let i=Math.round((vbx-padL)/((W-padL-padR)/(n-1||1))); return Math.max(0,Math.min(n-1,i)); }
+  function show(e){ const i=idxAt(e); const cl=document.getElementById('crossline'), cd=document.getElementById('crossdots'), xp=Xfn(i);
+    cl.setAttribute('x1',xp); cl.setAttribute('x2',xp); cl.style.display="";
+    let dots="",rows="";
+    series.forEach(s=>{ const c=s.map[i]; if(!c) return;
+      dots+=`<circle cx="${xp}" cy="${Yfn(c.r)}" r="4.3" fill="${s.color}" stroke="#fff" stroke-width="1.5"/>`;
+      let dw=""; for(let j=i-1;j>=0;j--){ if(s.map[j]){ const d=c.w-s.map[j].w;
+        dw=d>0?` <span style="color:var(--up)">+${fmt(d)}</span>`:d<0?` <span style="color:var(--down)">${fmt(d)}</span>`:""; break; } }
       const short=s.name.length>22?s.name.slice(0,22)+"…":s.name;
-      rows+=`<div class="row"><span class="dot" style="background:${s.color}"></span>
-        <span class="nm">${short}</span><b>${cur.r}위</b> · 위시 <b>${fmt(cur.w)}</b>${dw}</div>`;
-    });
-    cd.innerHTML=dots;
-    if(!rows){ tip.style.display="none"; return; }
-    tip.innerHTML=`<div class="th">${stamps[i]||""}</div>${rows}`;
-    tip.style.display="block";
-    const cx=(e.touches? e.touches[0].clientX : e.clientX);
-    const cy=(e.touches? e.touches[0].clientY : e.clientY);
-    const tw=tip.offsetWidth, th=tip.offsetHeight;
-    let left=cx+14, top=cy+14;
-    if(left+tw>window.innerWidth-8) left=cx-tw-14;
-    if(top+th>window.innerHeight-8) top=cy-th-14;
-    tip.style.left=Math.max(8,left)+"px"; tip.style.top=Math.max(8,top)+"px";
-  }
-  function hide(){ tip.style.display="none";
-    const cl=document.getElementById('crossline'); if(cl) cl.style.display="none";
-    const cd=document.getElementById('crossdots'); if(cd) cd.innerHTML=""; }
-  svg.addEventListener('mousemove',show);
-  svg.addEventListener('mouseleave',hide);
-  svg.addEventListener('touchstart',show,{passive:true});
-  svg.addEventListener('touchmove',show,{passive:true});
-  svg.addEventListener('touchend',hide);
+      rows+=`<div class="row"><span class="dot" style="background:${s.color}"></span><span class="nm">${short}</span><b>${c.r}위</b> · 위시 <b>${fmt(c.w)}</b>${dw}</div>`; });
+    cd.innerHTML=dots; if(!rows){tip.style.display="none";return;}
+    tip.innerHTML=`<div class="th">${stamps[i]||""}</div>${rows}`; tip.style.display="block";
+    const cx=e.touches?e.touches[0].clientX:e.clientX, cy=e.touches?e.touches[0].clientY:e.clientY;
+    const tw=tip.offsetWidth, th=tip.offsetHeight; let l=cx+14,t=cy+14;
+    if(l+tw>window.innerWidth-8) l=cx-tw-14; if(t+th>window.innerHeight-8) t=cy-th-14;
+    tip.style.left=Math.max(8,l)+"px"; tip.style.top=Math.max(8,t)+"px"; }
+  function hide(){ tip.style.display="none"; const cl=document.getElementById('crossline'); if(cl)cl.style.display="none";
+    const cd=document.getElementById('crossdots'); if(cd)cd.innerHTML=""; }
+  svg.addEventListener('mousemove',show); svg.addEventListener('mouseleave',hide);
+  svg.addEventListener('touchstart',show,{passive:true}); svg.addEventListener('touchmove',show,{passive:true}); svg.addEventListener('touchend',hide);
 }
 
-function setupSlider(){
-  const arr=srcArr(); const n=arr.length;
-  const el=document.getElementById('hour');
-  const defStart=Math.max(0, n-winLen());   // 기본: 기간 길이만큼 과거부터, 끝은 현재
-  el.min=0; el.max=Math.max(0,n-2);
-  el.value=Math.min(defStart, Math.max(0,n-2));
-  el.disabled=n<=2;
-  curIdx=+el.value;
-  updateLabels();
+/* ---------- 컨트롤 ---------- */
+function syncChips(){ document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('active', !customFrom && c.dataset.r===rangeMode)); }
+function defaultDates(){
+  const s=store[curCat]; const arr=(s&&s.daily&&s.daily.length)?s.daily:(s&&s.hourly)||[];
+  if(!arr.length) return; const last=arr[arr.length-1].t.slice(0,10);
+  document.getElementById('toD').value=last; document.getElementById('fromD').value=shiftDays(last,-7);
 }
-function updateLabels(){
-  const arr=srcArr();
-  const st = arr.length? (arr[Math.min(curIdx,arr.length-1)]?.t||"") : "";
-  document.getElementById('hourlabel').textContent = st? `${st.slice(0,16)} → 지금` : "—";
-  const s=store[curCat];
-  document.getElementById('updated').textContent =
-    (s&&s.latest)? `최종 업데이트: ${s.latest.t}` : "";
-}
-function populateDates(){
-  const sel=document.getElementById('dateSel'); const n=count();
-  if(!n){ sel.innerHTML=""; return; }
-  const dates=[];
-  for(let i=0;i<n;i++){ const d=(stampAt(i)||"").slice(0,10); if(d&&!dates.includes(d)) dates.push(d); }
-  sel.innerHTML=dates.map(d=>`<option value="${d}">${d}</option>`).join("");
-  sel.value=(stampAt(curIdx)||"").slice(0,10);
-}
+function updateUpdated(){ const s=store[curCat]; document.getElementById('updated').innerHTML=(s&&s.latest)?`최종 업데이트 <b>${s.latest.t}</b>`:""; }
 
-function refresh(){ setupSlider(); populateDates(); renderSelbar(); renderTable(); renderChart(); }
+function refreshAll(){ updateUpdated(); renderSelbar(); renderTable(); renderChart(); }
 
 async function switchCat(cat){
   curCat=cat; query=""; document.getElementById('q').value="";
-  await load(cat);
-  selected=(selByCat[cat]||[]).slice();
-  refresh();
+  await load(cat); selected=(selByCat[cat]||[]).slice();
+  if(!document.getElementById('toD').value) defaultDates();
+  refreshAll();
 }
 
-document.getElementById('tabs').onclick=e=>{
-  if(!e.target.dataset.cat) return;
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  e.target.classList.add('active');
-  switchCat(e.target.dataset.cat);
-};
-document.getElementById('rangeSel').onchange=function(){ curRange=this.value; refresh(); };
-document.getElementById('dateSel').onchange=function(){
-  const d=this.value; const arr=srcArr(); let target=0;
-  for(let i=0;i<arr.length;i++){ if((arr[i].t||"").slice(0,10)===d){ target=i; break; } }  // 그 날짜의 '첫' 지점을 시작으로
-  curIdx=Math.min(target, Math.max(0,arr.length-2));
-  document.getElementById('hour').value=curIdx; updateLabels(); renderChart();  // 표는 현재 고정이라 안 바꿈(가벼움)
-};
-document.getElementById('hour').oninput=function(){
-  curIdx=+this.value; document.getElementById('dateSel').value=(stampAt(curIdx)||"").slice(0,10);
-  updateLabels(); renderChart();
-};
+document.getElementById('tabs').onclick=e=>{ const b=e.target.closest('.tab'); if(!b) return;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active')); b.classList.add('active'); switchCat(b.dataset.cat); };
+document.getElementById('chips').onclick=e=>{ const b=e.target.closest('.chip'); if(!b) return;
+  rangeMode=b.dataset.r; customFrom=customTo=null; document.getElementById('fromD').value=""; document.getElementById('toD').value=""; defaultDates();
+  syncChips(); renderChart(); };
+function onCustom(){ const f=document.getElementById('fromD').value, t=document.getElementById('toD').value;
+  if(f&&t){ customFrom=f<=t?f:t; customTo=f<=t?t:f; syncChips(); renderChart(); } }
+document.getElementById('fromD').onchange=onCustom;
+document.getElementById('toD').onchange=onCustom;
 document.getElementById('q').oninput=function(){ query=this.value.trim(); renderTable(); };
 
-switchCat('health');
+syncChips(); switchCat('health');
 </script>
 </body>
 </html>
