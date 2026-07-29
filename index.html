@@ -115,9 +115,9 @@
       <option value="6개월">6개월</option>
       <option value="1년">1년</option>
     </select>
-    <label>날짜</label>
+    <label>시작일</label>
     <select id="dateSel"></select>
-    <label>시점</label>
+    <label>← 과거로</label>
     <input type="range" id="hour" min="0" max="0" value="0" step="1">
     <span class="timepill" id="hourlabel">—</span>
   </div>
@@ -196,8 +196,9 @@ function renderTable(){
     return;
   }
   const arr=srcArr();
-  const cur=itemsAt(curIdx);
-  const prev = curIdx>0 ? snapMap(arr[curIdx-1]?.items) : null;
+  const ni=arr.length-1;                 // 표는 항상 '현재(최신)' 순위 고정
+  const cur=itemsAt(ni);
+  const prev = ni>0 ? snapMap(arr[ni-1]?.items) : null;
   let items=(cur||[]).slice().sort((a,b)=>a.r-b.r);
   if(query){ const q=query.toLowerCase();
     items=items.filter(it=>(it.n||"").toLowerCase().includes(q)||(it.b||"").toLowerCase().includes(q)); }
@@ -266,9 +267,8 @@ function renderChart(){
   if(!selected.length){ chart.innerHTML=""; chartState=null; return; }
   // 선택한 시점(curIdx)을 '끝'으로, 기간 길이만큼 창을 잡는다
   const isDaily = srcName()==="daily";
-  const L=winLen();
-  const end=Math.min(arr.length-1, Math.max(0,curIdx));
-  const start=Math.max(0, end-L+1);
+  const end=arr.length-1;                            // 오른쪽 끝 = 항상 현재
+  const start=Math.max(0, Math.min(curIdx, end-1));  // 슬라이더/시작일 = 과거 시작점
   const win=arr.slice(start, end+1);
   const cut = t => isDaily ? (t||"").slice(0,10) : (t||"").slice(0,16);
   const rangeLabel = win.length? `${cut(win[0].t)} ~ ${cut(win[win.length-1].t)}` : "";
@@ -371,15 +371,19 @@ function attachHover(){
 }
 
 function setupSlider(){
-  const n=count();
+  const arr=srcArr(); const n=arr.length;
   const el=document.getElementById('hour');
-  el.max=Math.max(0,n-1); el.value=n?n-1:0; el.disabled=n<=1;
-  curIdx=n?n-1:0;
+  const defStart=Math.max(0, n-winLen());   // 기본: 기간 길이만큼 과거부터, 끝은 현재
+  el.min=0; el.max=Math.max(0,n-2);
+  el.value=Math.min(defStart, Math.max(0,n-2));
+  el.disabled=n<=2;
+  curIdx=+el.value;
   updateLabels();
 }
 function updateLabels(){
-  const n=count();
-  document.getElementById('hourlabel').textContent = n? stampAt(curIdx):"—";
+  const arr=srcArr();
+  const st = arr.length? (arr[Math.min(curIdx,arr.length-1)]?.t||"") : "";
+  document.getElementById('hourlabel').textContent = st? `${st.slice(0,16)} → 지금` : "—";
   const s=store[curCat];
   document.getElementById('updated').textContent =
     (s&&s.latest)? `최종 업데이트: ${s.latest.t}` : "";
@@ -410,13 +414,14 @@ document.getElementById('tabs').onclick=e=>{
 };
 document.getElementById('rangeSel').onchange=function(){ curRange=this.value; refresh(); };
 document.getElementById('dateSel').onchange=function(){
-  const d=this.value; let target=curIdx;
-  for(let i=0;i<count();i++){ if((stampAt(i)||"").slice(0,10)===d) target=i; }
-  curIdx=target; document.getElementById('hour').value=curIdx; updateLabels(); renderTable(); renderChart();
+  const d=this.value; const arr=srcArr(); let target=0;
+  for(let i=0;i<arr.length;i++){ if((arr[i].t||"").slice(0,10)===d){ target=i; break; } }  // 그 날짜의 '첫' 지점을 시작으로
+  curIdx=Math.min(target, Math.max(0,arr.length-2));
+  document.getElementById('hour').value=curIdx; updateLabels(); renderChart();  // 표는 현재 고정이라 안 바꿈(가벼움)
 };
 document.getElementById('hour').oninput=function(){
   curIdx=+this.value; document.getElementById('dateSel').value=(stampAt(curIdx)||"").slice(0,10);
-  updateLabels(); renderTable(); renderChart();
+  updateLabels(); renderChart();
 };
 document.getElementById('q').oninput=function(){ query=this.value.trim(); renderTable(); };
 
